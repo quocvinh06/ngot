@@ -73,9 +73,19 @@ DATABASE_URL='postgresql://...neon.tech/...' npm run db:seed
 
 6. Update `NEXTAUTH_URL` env var in Vercel to your deployed URL (e.g. `https://ngot.vercel.app`) and redeploy.
 
-### 3. Cron
+### 3. Cron — order deadline alerts (GitHub Actions, free)
 
-`vercel.json` declares one cron: `/api/cron/order-deadlines` runs every 15 min and alerts the configured Telegram chat for orders nearing their deadline. The endpoint is gated by the `CRON_SECRET` env var.
+Vercel Hobby caps cron at once-per-day. We use GitHub Actions cron instead — `*/15 * * * *` is fine on the free tier.
+
+The workflow lives at `.github/workflows/cron-order-deadlines.yml` and POSTs to `/api/cron/order-deadlines` (auth via `CRON_SECRET`).
+
+Configure once after deploy:
+
+1. GitHub repo → **Settings → Secrets and variables → Actions → New repository secret**:
+   - `APP_URL` = your live Vercel URL (e.g. `https://ngot.vercel.app`)
+   - `CRON_SECRET` = same value as in Vercel env
+
+The workflow then fires every 15 min automatically. Manually trigger via **Actions → cron-order-deadlines → Run workflow**.
 
 ### 4. Telegram bot (optional)
 

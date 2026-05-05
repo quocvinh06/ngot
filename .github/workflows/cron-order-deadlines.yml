@@ -1,0 +1,38 @@
+name: cron-order-deadlines
+# Hits the deployed Vercel app every 15 minutes to dispatch
+# order-deadline-approaching Telegram alerts. Vercel Hobby tier caps cron
+# at daily; GitHub Actions cron is free + 15-min granularity.
+#
+# Required repo secrets (Settings → Secrets and variables → Actions → New):
+#   - APP_URL       — e.g. https://ngot.vercel.app
+#   - CRON_SECRET   — the same value set in Vercel env
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: cron-order-deadlines
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Hit /api/cron/order-deadlines
+        run: |
+          set -euo pipefail
+          : "${APP_URL:?APP_URL secret required}"
+          : "${CRON_SECRET:?CRON_SECRET secret required}"
+          code=$(curl -sS -o /tmp/body -w '%{http_code}' \
+            -X POST "${APP_URL%/}/api/cron/order-deadlines" \
+            -H "Authorization: Bearer ${CRON_SECRET}" \
+            --max-time 30)
+          echo "HTTP ${code}"
+          cat /tmp/body || true
+          [ "$code" -ge 200 ] && [ "$code" -lt 400 ]
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
