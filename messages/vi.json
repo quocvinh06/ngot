@@ -1,0 +1,192 @@
+{
+  "brand": {
+    "app_name": "Ngọt",
+    "tagline": "Quản lý cửa hàng bánh ngọt, đơn giản hơn bao giờ hết.",
+    "footer_madewith": "Làm với ♥ tại Việt Nam"
+  },
+  "auth": {
+    "signin": {
+      "title": "Đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submit": "Đăng nhập",
+      "error": "Email hoặc mật khẩu không đúng",
+      "demo_hint": "Tài khoản demo: owner@ngot.local / ngot1234"
+    },
+    "signout": "Đăng xuất",
+    "role": {
+      "owner": "Chủ cửa hàng",
+      "staff": "Nhân viên"
+    }
+  },
+  "nav": {
+    "admin": "Tổng quan",
+    "staff": "Khu nhân viên",
+    "orders": "Đơn hàng",
+    "menu": "Thực đơn",
+    "inventory": "Kho nguyên liệu",
+    "suppliers": "Nhà cung cấp",
+    "customers": "Khách hàng",
+    "campaigns": "Khuyến mãi",
+    "finance": "Tài chính",
+    "finance_pnl": "Lãi & Lỗ",
+    "finance_expenses": "Chi phí",
+    "settings": "Cài đặt",
+    "settings_staff": "Nhân viên",
+    "settings_integrations": "Tích hợp",
+    "settings_vat": "Thuế GTGT",
+    "audit": "Nhật ký kiểm toán"
+  },
+  "cta": {
+    "create": "Tạo mới",
+    "add": "Thêm",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "confirm": "Xác nhận",
+    "test": "Thử nghiệm",
+    "export": "Xuất dữ liệu",
+    "advance_status": "Chuyển trạng thái",
+    "cancel_order": "Hủy đơn",
+    "new_order": "+ Đơn hàng mới",
+    "new_menu_item": "+ Món mới",
+    "new_material": "+ Nguyên liệu mới",
+    "new_campaign": "+ Khuyến mãi mới",
+    "new_expense": "+ Chi phí mới",
+    "new_customer": "+ Khách mới",
+    "signin_now": "Đăng nhập"
+  },
+  "order": {
+    "status": {
+      "new": "Mới",
+      "confirmed": "Đã xác nhận",
+      "preparing": "Đang chuẩn bị",
+      "ready": "Sẵn sàng",
+      "delivered": "Đã giao",
+      "canceled": "Đã hủy"
+    }
+  },
+  "payment": {
+    "method": {
+      "VietQR": "VietQR",
+      "MoMo": "MoMo",
+      "ZaloPay": "ZaloPay",
+      "BankTransfer": "Chuyển khoản",
+      "Cash": "Tiền mặt",
+      "COD": "Thu hộ (COD)"
+    },
+    "status": {
+      "unpaid": "Chưa thanh toán",
+      "paid": "Đã thanh toán",
+      "refunded": "Đã hoàn tiền"
+    }
+  },
+  "unit": {
+    "g": "gram",
+    "kg": "kilogram",
+    "ml": "ml",
+    "L": "lít",
+    "piece": "cái",
+    "box": "hộp"
+  },
+  "inventory": {
+    "qty_on_hand": "Tồn kho",
+    "threshold": "Ngưỡng cảnh báo",
+    "low_stock_alert": "Sắp hết hàng",
+    "movement": {
+      "opening_balance": "Số dư đầu kỳ",
+      "purchase": "Nhập kho",
+      "consumption": "Xuất theo đơn hàng",
+      "waste": "Hao hụt",
+      "adjustment": "Điều chỉnh"
+    }
+  },
+  "menu": {
+    "cogs": "Giá vốn (COGS)",
+    "margin": "Tỷ lệ lãi",
+    "shelf_life_hours": "Hạn sử dụng (giờ)",
+    "recipe": "Công thức",
+    "recipe_add_material": "Thêm nguyên liệu",
+    "recipe_qty_used": "Khối lượng dùng"
+  },
+  "customer": {
+    "consent_label": "Tôi đã thông báo cho khách hàng và nhận được sự đồng ý lưu thông tin cá nhân theo Luật PDPL 91/2025.",
+    "consent_required": "Bạn phải xác nhận đã có sự đồng ý của khách hàng trước khi lưu.",
+    "dsr_export": "Xuất dữ liệu (PDPL)",
+    "dsr_delete": "Xóa theo PDPL",
+    "dsr_confirm": "Hành động này sẽ ẩn danh thông tin cá nhân của khách hàng. Đơn hàng cũ vẫn được giữ.",
+    "anonymized_label": "KH ẩn danh"
+  },
+  "finance": {
+    "pnl_title": "Lãi & Lỗ",
+    "revenue": "Doanh thu",
+    "cogs": "Giá vốn (COGS)",
+    "cogs_pct": "COGS / Doanh thu",
+    "gross_margin": "Lãi gộp",
+    "expenses": "Chi phí",
+    "net_profit": "Lãi ròng",
+    "alert_cogs_high": "Cảnh báo: COGS đang vượt {threshold}% — kiểm tra lại công thức và giá nguyên liệu."
+  },
+  "campaign": {
+    "type": {
+      "percentage": "Theo phần trăm",
+      "fixed": "Số tiền cố định"
+    },
+    "applies_to": {
+      "all": "Toàn bộ thực đơn",
+      "category": "Theo danh mục",
+      "item": "Theo món"
+    }
+  },
+  "settings": {
+    "telegram_title": "Telegram",
+    "telegram_help": "Đặt biến môi trường TELEGRAM_BOT_TOKEN và TELEGRAM_CHAT_ID. Bot sẽ gửi cảnh báo đơn hàng + tồn kho.",
+    "sheets_title": "Google Sheet",
+    "sheets_help": "Chia sẻ Sheet với email service-account và đặt biến GOOGLE_SHEETS_ID + GOOGLE_SERVICE_ACCOUNT_KEY.",
+    "vat_exempt_label": "Cửa hàng dưới 500 triệu/năm — miễn thuế GTGT (theo Luật 48/2024)",
+    "vat_default_pct": "Thuế suất mặc định",
+    "vat_invoice_prefix": "Tiền tố hóa đơn"
+  },
+  "empty": {
+    "no_orders": "Chưa có đơn hàng nào — bấm \"+ Đơn hàng mới\" để bắt đầu.",
+    "no_menu_items": "Chưa có món nào — thêm món đầu tiên để khách đặt hàng.",
+    "no_materials": "Chưa có nguyên liệu — thêm nguyên liệu đầu tiên để theo dõi tồn kho.",
+    "no_customers": "Chưa có khách hàng — thêm khách hoặc khách sẽ được tự tạo khi đặt đơn.",
+    "no_campaigns": "Chưa có khuyến mãi nào.",
+    "no_expenses": "Chưa ghi nhận chi phí nào tháng này.",
+    "no_audit": "Chưa có hoạt động nào trong khoảng thời gian này."
+  },
+  "error": {
+    "generic": "Đã có lỗi xảy ra — thử lại sau ít phút.",
+    "unauthorized": "Bạn không có quyền truy cập trang này.",
+    "telegram_failed": "Không gửi được Telegram (xem chi tiết tại Nhật ký kiểm toán).",
+    "sheets_failed": "Không đồng bộ được Google Sheet (xem chi tiết tại Nhật ký kiểm toán)."
+  },
+  "toast": {
+    "order_created": "Đã tạo đơn hàng {code}",
+    "order_transitioned": "Đơn hàng {code} chuyển sang {status}",
+    "menu_item_saved": "Đã lưu món {name}",
+    "material_saved": "Đã lưu nguyên liệu {name}",
+    "campaign_saved": "Đã lưu khuyến mãi {name}",
+    "expense_saved": "Đã ghi chi phí",
+    "customer_anonymized": "Đã ẩn danh khách hàng",
+    "test_telegram_sent": "Đã gửi tin Telegram thử nghiệm"
+  },
+  "legal": {
+    "privacy_title": "Chính sách bảo mật",
+    "terms_title": "Điều khoản sử dụng",
+    "privacy_governing_law": "Tuân thủ Luật Bảo vệ Dữ liệu Cá nhân số 91/2025/QH15 và Nghị định 356/2025/NĐ-CP."
+  },
+  "consent": {
+    "customer_personal_data": "Tôi đã thông báo cho khách hàng và nhận được sự đồng ý lưu thông tin cá nhân (tên, số điện thoại, địa chỉ) theo Luật PDPL số 91/2025/QH15."
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "search": "Tìm kiếm",
+    "filter": "Lọc",
+    "all": "Tất cả",
+    "yes": "Có",
+    "no": "Không"
+  }
+}

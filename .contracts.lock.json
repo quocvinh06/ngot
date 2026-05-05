@@ -1,0 +1,11 @@
+{
+  "version": "0.7.1",
+  "generated_at": "2026-05-05T09:56:13.735Z",
+  "generator": ".claude/lib/contracts-lock-v7.mjs",
+  "description": "v0.7 contracts lock — pins SHAs of design.md + hand-written schema + validators + migrations. Drift detection on subsequent verify runs.",
+  "files": {
+    ".appdroid/design.md": "56d19c243412fbe1",
+    "lib/db/schema.ts": "727cd016a990a017",
+    "lib/validators": "823ffa1901b65b1a"
+  }
+}

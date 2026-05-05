@@ -1,0 +1,192 @@
+{
+  "brand": {
+    "app_name": "Ngọt",
+    "tagline": "Run your pastry shop, beautifully simple.",
+    "footer_madewith": "Made with ♥ in Vietnam"
+  },
+  "auth": {
+    "signin": {
+      "title": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "error": "Incorrect email or password",
+      "demo_hint": "Demo account: owner@ngot.local / ngot1234"
+    },
+    "signout": "Sign out",
+    "role": {
+      "owner": "Owner",
+      "staff": "Staff"
+    }
+  },
+  "nav": {
+    "admin": "Overview",
+    "staff": "Staff area",
+    "orders": "Orders",
+    "menu": "Menu",
+    "inventory": "Inventory",
+    "suppliers": "Suppliers",
+    "customers": "Customers",
+    "campaigns": "Campaigns",
+    "finance": "Finance",
+    "finance_pnl": "P&L",
+    "finance_expenses": "Expenses",
+    "settings": "Settings",
+    "settings_staff": "Staff",
+    "settings_integrations": "Integrations",
+    "settings_vat": "VAT",
+    "audit": "Audit log"
+  },
+  "cta": {
+    "create": "Create",
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "test": "Test",
+    "export": "Export",
+    "advance_status": "Advance status",
+    "cancel_order": "Cancel order",
+    "new_order": "+ New order",
+    "new_menu_item": "+ New item",
+    "new_material": "+ New material",
+    "new_campaign": "+ New campaign",
+    "new_expense": "+ New expense",
+    "new_customer": "+ New customer",
+    "signin_now": "Sign in"
+  },
+  "order": {
+    "status": {
+      "new": "New",
+      "confirmed": "Confirmed",
+      "preparing": "Preparing",
+      "ready": "Ready",
+      "delivered": "Delivered",
+      "canceled": "Canceled"
+    }
+  },
+  "payment": {
+    "method": {
+      "VietQR": "VietQR",
+      "MoMo": "MoMo",
+      "ZaloPay": "ZaloPay",
+      "BankTransfer": "Bank transfer",
+      "Cash": "Cash",
+      "COD": "Cash on delivery"
+    },
+    "status": {
+      "unpaid": "Unpaid",
+      "paid": "Paid",
+      "refunded": "Refunded"
+    }
+  },
+  "unit": {
+    "g": "gram",
+    "kg": "kilogram",
+    "ml": "ml",
+    "L": "liter",
+    "piece": "piece",
+    "box": "box"
+  },
+  "inventory": {
+    "qty_on_hand": "On hand",
+    "threshold": "Low-stock threshold",
+    "low_stock_alert": "Low stock",
+    "movement": {
+      "opening_balance": "Opening balance",
+      "purchase": "Purchase",
+      "consumption": "Order consumption",
+      "waste": "Waste",
+      "adjustment": "Adjustment"
+    }
+  },
+  "menu": {
+    "cogs": "COGS",
+    "margin": "Margin",
+    "shelf_life_hours": "Shelf life (h)",
+    "recipe": "Recipe",
+    "recipe_add_material": "Add material",
+    "recipe_qty_used": "Qty used"
+  },
+  "customer": {
+    "consent_label": "I have informed the customer and received consent to store their personal data per PDPL 91/2025.",
+    "consent_required": "You must confirm the customer's consent before saving.",
+    "dsr_export": "Export data (PDPL)",
+    "dsr_delete": "Delete (PDPL)",
+    "dsr_confirm": "This will anonymize the customer's personal data. Past orders are kept.",
+    "anonymized_label": "Anonymized customer"
+  },
+  "finance": {
+    "pnl_title": "Profit & Loss",
+    "revenue": "Revenue",
+    "cogs": "COGS",
+    "cogs_pct": "COGS / Revenue",
+    "gross_margin": "Gross margin",
+    "expenses": "Expenses",
+    "net_profit": "Net profit",
+    "alert_cogs_high": "Alert: COGS is above {threshold}% — review recipes and ingredient prices."
+  },
+  "campaign": {
+    "type": {
+      "percentage": "Percentage",
+      "fixed": "Fixed amount"
+    },
+    "applies_to": {
+      "all": "All menu items",
+      "category": "By category",
+      "item": "By item"
+    }
+  },
+  "settings": {
+    "telegram_title": "Telegram",
+    "telegram_help": "Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID. The bot sends order + inventory alerts.",
+    "sheets_title": "Google Sheets",
+    "sheets_help": "Share the sheet with the service-account email and set GOOGLE_SHEETS_ID + GOOGLE_SERVICE_ACCOUNT_KEY.",
+    "vat_exempt_label": "Shop under VND 500M/yr — VAT-exempt (per Law 48/2024)",
+    "vat_default_pct": "Default VAT rate",
+    "vat_invoice_prefix": "Invoice prefix"
+  },
+  "empty": {
+    "no_orders": "No orders yet — tap \"+ New order\" to start.",
+    "no_menu_items": "No items yet — add your first menu item.",
+    "no_materials": "No materials yet — add your first to track inventory.",
+    "no_customers": "No customers yet — add one or they'll be created on first order.",
+    "no_campaigns": "No campaigns yet.",
+    "no_expenses": "No expenses recorded this month.",
+    "no_audit": "No activity in the selected period."
+  },
+  "error": {
+    "generic": "Something went wrong — please try again later.",
+    "unauthorized": "You don't have permission to view this page.",
+    "telegram_failed": "Telegram delivery failed (see audit log).",
+    "sheets_failed": "Google Sheets sync failed (see audit log)."
+  },
+  "toast": {
+    "order_created": "Order {code} created",
+    "order_transitioned": "Order {code} → {status}",
+    "menu_item_saved": "Saved menu item {name}",
+    "material_saved": "Saved material {name}",
+    "campaign_saved": "Saved campaign {name}",
+    "expense_saved": "Expense saved",
+    "customer_anonymized": "Customer anonymized",
+    "test_telegram_sent": "Test Telegram message sent"
+  },
+  "legal": {
+    "privacy_title": "Privacy Policy",
+    "terms_title": "Terms of Service",
+    "privacy_governing_law": "Compliant with Personal Data Protection Law 91/2025/QH15 and Decree 356/2025/ND-CP."
+  },
+  "consent": {
+    "customer_personal_data": "I have informed the customer and received consent to store their personal data (name, phone, address) per PDPL 91/2025/QH15."
+  },
+  "common": {
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "yes": "Yes",
+    "no": "No"
+  }
+}
