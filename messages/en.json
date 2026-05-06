@@ -1,0 +1,41 @@
+{
+  "brand.name": "Ngọt",
+  "brand.tagline": "Pastry & Cake Studio",
+
+  "nav.dashboard": "Dashboard",
+  "nav.orders": "Orders",
+  "nav.new_order": "New Order",
+  "nav.order_detail": "Order Detail",
+  "nav.inventory": "Inventory",
+  "nav.inventory_purchase": "Purchase",
+  "nav.inventory_detail": "Ingredient Detail",
+  "nav.menu": "Menu",
+  "nav.menu_edit": "Edit Dish",
+  "nav.recipes": "Recipes",
+  "nav.campaigns": "Campaigns",
+  "nav.customers": "Customers",
+  "nav.customer_detail": "Customer Detail",
+  "nav.financials": "Financials",
+  "nav.equipment": "Equipment",
+  "nav.assistant": "Ngot Assistant",
+  "nav.skills": "Assistant Skills",
+  "nav.settings": "Settings",
+  "nav.sheets_setup": "Sheets Setup",
+  "nav.audit_log": "Audit Log",
+
+  "auth.title": "Sign In",
+  "auth.subtitle": "Ngot bakery management system",
+  "auth.password_label": "Password",
+  "auth.submit": "Sign In",
+  "auth.error_wrong": "Wrong password — please try again.",
+  "auth.admin_required": "Admin password required for this section.",
+  "auth.signed_in_as": "Signed in as: {role}",
+  "auth.signout": "Sign Out",
+
+  "cta.save": "Save",
+  "cta.confirm": "Confirm",
+  "cta.cancel": "Cancel",
+  "cta.search": "Search",
+
+  "misc.unit_vnd": "₫"
+}

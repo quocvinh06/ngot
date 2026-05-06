@@ -1,0 +1,13 @@
+id,key,value,is_secret,updated_at,updated_by
+1,sheets_url,,TRUE,2026-05-06T09:00:00,system
+2,gemini_api_key,,TRUE,2026-05-06T09:00:00,system
+3,telegram_bot_token,,TRUE,2026-05-06T09:00:00,system
+4,telegram_chat_id,,FALSE,2026-05-06T09:00:00,system
+5,bank_name,MB Bank,FALSE,2026-05-06T09:00:00,system
+6,bank_account_number,,FALSE,2026-05-06T09:00:00,system
+7,bank_account_holder,,FALSE,2026-05-06T09:00:00,system
+8,bank_bin,970422,FALSE,2026-05-06T09:00:00,system
+9,vietqr_template,compact,FALSE,2026-05-06T09:00:00,system
+10,shop_name,Ngọt — Pastry & Cake Studio,FALSE,2026-05-06T09:00:00,system
+11,shop_address,"123 Lê Lợi, Q.1, TP. HCM",FALSE,2026-05-06T09:00:00,system
+12,shop_phone,+84908000000,FALSE,2026-05-06T09:00:00,system

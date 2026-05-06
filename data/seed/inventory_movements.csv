@@ -1,0 +1,415 @@
+id,occurred_at,ingredient_id,kind,quantity,unit_price_vnd,total_vnd,related_order_id,notes,recorded_by
+1,2026-03-07T02:00:00,1,purchase,7.5,60000,450000,,Nhập định kỳ,staff
+2,2026-03-21T02:00:00,1,purchase,10.0,60000,600000,,Nhập định kỳ,staff
+3,2026-04-04T02:00:00,1,purchase,12.5,60000,750000,,Nhập định kỳ,staff
+4,2026-04-18T02:00:00,1,purchase,15.0,60000,900000,,Nhập định kỳ,staff
+5,2026-03-06T19:00:00,2,purchase,7.5,60013,450097,,Nhập định kỳ,staff
+6,2026-03-20T19:00:00,2,purchase,10.0,60013,600130,,Nhập định kỳ,staff
+7,2026-04-03T19:00:00,2,purchase,12.5,60013,750162,,Nhập định kỳ,staff
+8,2026-04-17T19:00:00,2,purchase,15.0,60013,900195,,Nhập định kỳ,staff
+9,2026-03-06T12:00:00,3,purchase,3.0,60026,180078,,Nhập định kỳ,staff
+10,2026-03-20T12:00:00,3,purchase,4.0,60026,240104,,Nhập định kỳ,staff
+11,2026-04-03T12:00:00,3,purchase,5.0,60026,300130,,Nhập định kỳ,staff
+12,2026-04-17T12:00:00,3,purchase,6.0,60026,360156,,Nhập định kỳ,staff
+13,2026-03-07T05:00:00,4,purchase,12.0,60039,720468,,Nhập định kỳ,staff
+14,2026-03-21T05:00:00,4,purchase,16.0,60039,960624,,Nhập định kỳ,staff
+15,2026-04-04T05:00:00,4,purchase,20.0,60039,1200780,,Nhập định kỳ,staff
+16,2026-04-18T05:00:00,4,purchase,24.0,60039,1440936,,Nhập định kỳ,staff
+17,2026-03-06T22:00:00,5,purchase,4.5,60052,270234,,Nhập định kỳ,staff
+18,2026-03-20T22:00:00,5,purchase,6.0,60052,360312,,Nhập định kỳ,staff
+19,2026-04-03T22:00:00,5,purchase,7.5,60052,450390,,Nhập định kỳ,staff
+20,2026-04-17T22:00:00,5,purchase,9.0,60052,540468,,Nhập định kỳ,staff
+21,2026-03-06T15:00:00,6,purchase,90.0,3565,320850,,Nhập định kỳ,staff
+22,2026-03-20T15:00:00,6,purchase,120.0,3565,427800,,Nhập định kỳ,staff
+23,2026-04-03T15:00:00,6,purchase,150.0,3565,534750,,Nhập định kỳ,staff
+24,2026-04-17T15:00:00,6,purchase,180.0,3565,641700,,Nhập định kỳ,staff
+25,2026-03-07T08:00:00,7,purchase,9.0,45078,405702,,Nhập định kỳ,staff
+26,2026-03-21T08:00:00,7,purchase,12.0,45078,540936,,Nhập định kỳ,staff
+27,2026-04-04T08:00:00,7,purchase,15.0,45078,676170,,Nhập định kỳ,staff
+28,2026-04-18T08:00:00,7,purchase,18.0,45078,811404,,Nhập định kỳ,staff
+29,2026-03-07T01:00:00,8,purchase,6.0,45091,270546,,Nhập định kỳ,staff
+30,2026-03-21T01:00:00,8,purchase,8.0,45091,360728,,Nhập định kỳ,staff
+31,2026-04-04T01:00:00,8,purchase,10.0,45091,450910,,Nhập định kỳ,staff
+32,2026-04-18T01:00:00,8,purchase,12.0,45091,541092,,Nhập định kỳ,staff
+33,2026-03-06T18:00:00,9,purchase,4.5,45104,202968,,Nhập định kỳ,staff
+34,2026-03-20T18:00:00,9,purchase,6.0,45104,270624,,Nhập định kỳ,staff
+35,2026-04-03T18:00:00,9,purchase,7.5,45104,338280,,Nhập định kỳ,staff
+36,2026-04-17T18:00:00,9,purchase,9.0,45104,405936,,Nhập định kỳ,staff
+37,2026-03-06T11:00:00,10,purchase,1.5,60117,90175,,Nhập định kỳ,staff
+38,2026-03-20T11:00:00,10,purchase,2.0,60117,120234,,Nhập định kỳ,staff
+39,2026-04-03T11:00:00,10,purchase,2.5,60117,150292,,Nhập định kỳ,staff
+40,2026-04-17T11:00:00,10,purchase,3.0,60117,180351,,Nhập định kỳ,staff
+41,2026-03-07T04:00:00,11,purchase,0.75,60130,45097,,Nhập định kỳ,staff
+42,2026-03-21T04:00:00,11,purchase,1.0,60130,60130,,Nhập định kỳ,staff
+43,2026-04-04T04:00:00,11,purchase,1.25,60130,75162,,Nhập định kỳ,staff
+44,2026-04-18T04:00:00,11,purchase,1.5,60130,90195,,Nhập định kỳ,staff
+45,2026-03-06T21:00:00,12,purchase,1.5,60143,90214,,Nhập định kỳ,staff
+46,2026-03-20T21:00:00,12,purchase,2.0,60143,120286,,Nhập định kỳ,staff
+47,2026-04-03T21:00:00,12,purchase,2.5,60143,150357,,Nhập định kỳ,staff
+48,2026-04-17T21:00:00,12,purchase,3.0,60143,180429,,Nhập định kỳ,staff
+49,2026-03-06T14:00:00,13,purchase,1.5,60156,90234,,Nhập định kỳ,staff
+50,2026-03-20T14:00:00,13,purchase,2.0,60156,120312,,Nhập định kỳ,staff
+51,2026-04-03T14:00:00,13,purchase,2.5,60156,150390,,Nhập định kỳ,staff
+52,2026-04-17T14:00:00,13,purchase,3.0,60156,180468,,Nhập định kỳ,staff
+53,2026-03-07T07:00:00,14,purchase,0.75,60169,45126,,Nhập định kỳ,staff
+54,2026-03-21T07:00:00,14,purchase,1.0,60169,60169,,Nhập định kỳ,staff
+55,2026-04-04T07:00:00,14,purchase,1.25,60169,75211,,Nhập định kỳ,staff
+56,2026-04-18T07:00:00,14,purchase,1.5,60169,90253,,Nhập định kỳ,staff
+57,2026-03-07T00:00:00,15,purchase,300.0,382,114600,,Nhập định kỳ,staff
+58,2026-03-21T00:00:00,15,purchase,400.0,382,152800,,Nhập định kỳ,staff
+59,2026-04-04T00:00:00,15,purchase,500.0,382,191000,,Nhập định kỳ,staff
+60,2026-04-18T00:00:00,15,purchase,600.0,382,229200,,Nhập định kỳ,staff
+61,2026-03-06T17:00:00,16,purchase,300.0,395,118500,,Nhập định kỳ,staff
+62,2026-03-20T17:00:00,16,purchase,400.0,395,158000,,Nhập định kỳ,staff
+63,2026-04-03T17:00:00,16,purchase,500.0,395,197500,,Nhập định kỳ,staff
+64,2026-04-17T17:00:00,16,purchase,600.0,395,237000,,Nhập định kỳ,staff
+65,2026-03-06T10:00:00,17,purchase,1.5,60208,90312,,Nhập định kỳ,staff
+66,2026-03-20T10:00:00,17,purchase,2.0,60208,120416,,Nhập định kỳ,staff
+67,2026-04-03T10:00:00,17,purchase,2.5,60208,150520,,Nhập định kỳ,staff
+68,2026-04-17T10:00:00,17,purchase,3.0,60208,180624,,Nhập định kỳ,staff
+69,2026-03-07T03:00:00,18,purchase,300.0,421,126300,,Nhập định kỳ,staff
+70,2026-03-21T03:00:00,18,purchase,400.0,421,168400,,Nhập định kỳ,staff
+71,2026-04-04T03:00:00,18,purchase,500.0,421,210500,,Nhập định kỳ,staff
+72,2026-04-18T03:00:00,18,purchase,600.0,421,252600,,Nhập định kỳ,staff
+73,2026-03-06T20:00:00,19,purchase,300.0,434,130200,,Nhập định kỳ,staff
+74,2026-03-20T20:00:00,19,purchase,400.0,434,173600,,Nhập định kỳ,staff
+75,2026-04-03T20:00:00,19,purchase,500.0,434,217000,,Nhập định kỳ,staff
+76,2026-04-17T20:00:00,19,purchase,600.0,434,260400,,Nhập định kỳ,staff
+77,2026-03-06T13:00:00,20,purchase,7.5,28247,211852,,Nhập định kỳ,staff
+78,2026-03-20T13:00:00,20,purchase,10.0,28247,282470,,Nhập định kỳ,staff
+79,2026-04-03T13:00:00,20,purchase,12.5,28247,353087,,Nhập định kỳ,staff
+80,2026-04-17T13:00:00,20,purchase,15.0,28247,423705,,Nhập định kỳ,staff
+81,2026-03-07T06:00:00,21,purchase,1.5,60260,90390,,Nhập định kỳ,staff
+82,2026-03-21T06:00:00,21,purchase,2.0,60260,120520,,Nhập định kỳ,staff
+83,2026-04-04T06:00:00,21,purchase,2.5,60260,150650,,Nhập định kỳ,staff
+84,2026-04-18T06:00:00,21,purchase,3.0,60260,180780,,Nhập định kỳ,staff
+85,2026-03-06T23:00:00,22,purchase,2.25,60273,135614,,Nhập định kỳ,staff
+86,2026-03-20T23:00:00,22,purchase,3.0,60273,180819,,Nhập định kỳ,staff
+87,2026-04-03T23:00:00,22,purchase,3.75,60273,226023,,Nhập định kỳ,staff
+88,2026-04-17T23:00:00,22,purchase,4.5,60273,271228,,Nhập định kỳ,staff
+89,2026-03-06T16:00:00,23,purchase,1.5,60286,90429,,Nhập định kỳ,staff
+90,2026-03-20T16:00:00,23,purchase,2.0,60286,120572,,Nhập định kỳ,staff
+91,2026-04-03T16:00:00,23,purchase,2.5,60286,150715,,Nhập định kỳ,staff
+92,2026-04-17T16:00:00,23,purchase,3.0,60286,180858,,Nhập định kỳ,staff
+93,2026-03-07T09:00:00,24,purchase,3.0,45299,135897,,Nhập định kỳ,staff
+94,2026-03-21T09:00:00,24,purchase,4.0,45299,181196,,Nhập định kỳ,staff
+95,2026-04-04T09:00:00,24,purchase,5.0,45299,226495,,Nhập định kỳ,staff
+96,2026-04-18T09:00:00,24,purchase,6.0,45299,271794,,Nhập định kỳ,staff
+97,2026-03-07T02:00:00,25,purchase,0.75,60312,45234,,Nhập định kỳ,staff
+98,2026-03-21T02:00:00,25,purchase,1.0,60312,60312,,Nhập định kỳ,staff
+99,2026-04-04T02:00:00,25,purchase,1.25,60312,75390,,Nhập định kỳ,staff
+100,2026-04-18T02:00:00,25,purchase,1.5,60312,90468,,Nhập định kỳ,staff
+101,2026-03-06T19:00:00,26,purchase,750.0,525,393750,,Nhập định kỳ,staff
+102,2026-03-20T19:00:00,26,purchase,1000.0,525,525000,,Nhập định kỳ,staff
+103,2026-04-03T19:00:00,26,purchase,1250.0,525,656250,,Nhập định kỳ,staff
+104,2026-04-17T19:00:00,26,purchase,1500.0,525,787500,,Nhập định kỳ,staff
+105,2026-03-06T12:00:00,27,purchase,450.0,538,242100,,Nhập định kỳ,staff
+106,2026-03-20T12:00:00,27,purchase,600.0,538,322800,,Nhập định kỳ,staff
+107,2026-04-03T12:00:00,27,purchase,750.0,538,403500,,Nhập định kỳ,staff
+108,2026-04-17T12:00:00,27,purchase,900.0,538,484200,,Nhập định kỳ,staff
+109,2026-03-07T05:00:00,28,purchase,450.0,551,247950,,Nhập định kỳ,staff
+110,2026-03-21T05:00:00,28,purchase,600.0,551,330600,,Nhập định kỳ,staff
+111,2026-04-04T05:00:00,28,purchase,750.0,551,413250,,Nhập định kỳ,staff
+112,2026-04-18T05:00:00,28,purchase,900.0,551,495900,,Nhập định kỳ,staff
+113,2026-03-06T22:00:00,29,purchase,750.0,564,423000,,Nhập định kỳ,staff
+114,2026-03-20T22:00:00,29,purchase,1000.0,564,564000,,Nhập định kỳ,staff
+115,2026-04-03T22:00:00,29,purchase,1250.0,564,705000,,Nhập định kỳ,staff
+116,2026-04-17T22:00:00,29,purchase,1500.0,564,846000,,Nhập định kỳ,staff
+117,2026-03-06T15:00:00,30,purchase,3.0,60377,181131,,Nhập định kỳ,staff
+118,2026-03-20T15:00:00,30,purchase,4.0,60377,241508,,Nhập định kỳ,staff
+119,2026-04-03T15:00:00,30,purchase,5.0,60377,301885,,Nhập định kỳ,staff
+120,2026-04-17T15:00:00,30,purchase,6.0,60377,362262,,Nhập định kỳ,staff
+121,2026-03-07T08:00:00,31,purchase,3.0,60390,181170,,Nhập định kỳ,staff
+122,2026-03-21T08:00:00,31,purchase,4.0,60390,241560,,Nhập định kỳ,staff
+123,2026-04-04T08:00:00,31,purchase,5.0,60390,301950,,Nhập định kỳ,staff
+124,2026-04-18T08:00:00,31,purchase,6.0,60390,362340,,Nhập định kỳ,staff
+125,2026-03-07T01:00:00,32,purchase,2.25,60403,135906,,Nhập định kỳ,staff
+126,2026-03-21T01:00:00,32,purchase,3.0,60403,181209,,Nhập định kỳ,staff
+127,2026-04-04T01:00:00,32,purchase,3.75,60403,226511,,Nhập định kỳ,staff
+128,2026-04-18T01:00:00,32,purchase,4.5,60403,271813,,Nhập định kỳ,staff
+129,2026-03-06T18:00:00,33,purchase,750.0,616,462000,,Nhập định kỳ,staff
+130,2026-03-20T18:00:00,33,purchase,1000.0,616,616000,,Nhập định kỳ,staff
+131,2026-04-03T18:00:00,33,purchase,1250.0,616,770000,,Nhập định kỳ,staff
+132,2026-04-17T18:00:00,33,purchase,1500.0,616,924000,,Nhập định kỳ,staff
+133,2026-03-06T11:00:00,34,purchase,1.5,60429,90643,,Nhập định kỳ,staff
+134,2026-03-20T11:00:00,34,purchase,2.0,60429,120858,,Nhập định kỳ,staff
+135,2026-04-03T11:00:00,34,purchase,2.5,60429,151072,,Nhập định kỳ,staff
+136,2026-04-17T11:00:00,34,purchase,3.0,60429,181287,,Nhập định kỳ,staff
+137,2026-03-07T04:00:00,35,purchase,1.5,45442,68163,,Nhập định kỳ,staff
+138,2026-03-21T04:00:00,35,purchase,2.0,45442,90884,,Nhập định kỳ,staff
+139,2026-04-04T04:00:00,35,purchase,2.5,45442,113605,,Nhập định kỳ,staff
+140,2026-04-18T04:00:00,35,purchase,3.0,45442,136326,,Nhập định kỳ,staff
+141,2026-03-06T21:00:00,36,purchase,1.5,60455,90682,,Nhập định kỳ,staff
+142,2026-03-20T21:00:00,36,purchase,2.0,60455,120910,,Nhập định kỳ,staff
+143,2026-04-03T21:00:00,36,purchase,2.5,60455,151137,,Nhập định kỳ,staff
+144,2026-04-17T21:00:00,36,purchase,3.0,60455,181365,,Nhập định kỳ,staff
+145,2026-03-06T14:00:00,37,purchase,150.0,668,100200,,Nhập định kỳ,staff
+146,2026-03-20T14:00:00,37,purchase,200.0,668,133600,,Nhập định kỳ,staff
+147,2026-04-03T14:00:00,37,purchase,250.0,668,167000,,Nhập định kỳ,staff
+148,2026-04-17T14:00:00,37,purchase,300.0,668,200400,,Nhập định kỳ,staff
+149,2026-03-07T07:00:00,38,purchase,75.0,681,51075,,Nhập định kỳ,staff
+150,2026-03-21T07:00:00,38,purchase,100.0,681,68100,,Nhập định kỳ,staff
+151,2026-04-04T07:00:00,38,purchase,125.0,681,85125,,Nhập định kỳ,staff
+152,2026-04-18T07:00:00,38,purchase,150.0,681,102150,,Nhập định kỳ,staff
+153,2026-03-07T00:00:00,39,purchase,75.0,694,52050,,Nhập định kỳ,staff
+154,2026-03-21T00:00:00,39,purchase,100.0,694,69400,,Nhập định kỳ,staff
+155,2026-04-04T00:00:00,39,purchase,125.0,694,86750,,Nhập định kỳ,staff
+156,2026-04-18T00:00:00,39,purchase,150.0,694,104100,,Nhập định kỳ,staff
+157,2026-03-06T17:00:00,40,purchase,75.0,707,53025,,Nhập định kỳ,staff
+158,2026-03-20T17:00:00,40,purchase,100.0,707,70700,,Nhập định kỳ,staff
+159,2026-04-03T17:00:00,40,purchase,125.0,707,88375,,Nhập định kỳ,staff
+160,2026-04-17T17:00:00,40,purchase,150.0,707,106050,,Nhập định kỳ,staff
+161,2026-03-06T10:00:00,41,purchase,300.0,720,216000,,Nhập định kỳ,staff
+162,2026-03-20T10:00:00,41,purchase,400.0,720,288000,,Nhập định kỳ,staff
+163,2026-04-03T10:00:00,41,purchase,500.0,720,360000,,Nhập định kỳ,staff
+164,2026-04-17T10:00:00,41,purchase,600.0,720,432000,,Nhập định kỳ,staff
+165,2026-03-07T03:00:00,42,purchase,300.0,733,219900,,Nhập định kỳ,staff
+166,2026-03-21T03:00:00,42,purchase,400.0,733,293200,,Nhập định kỳ,staff
+167,2026-04-04T03:00:00,42,purchase,500.0,733,366500,,Nhập định kỳ,staff
+168,2026-04-18T03:00:00,42,purchase,600.0,733,439800,,Nhập định kỳ,staff
+169,2026-03-06T20:00:00,43,purchase,1.5,60546,90819,,Nhập định kỳ,staff
+170,2026-03-20T20:00:00,43,purchase,2.0,60546,121092,,Nhập định kỳ,staff
+171,2026-04-03T20:00:00,43,purchase,2.5,60546,151365,,Nhập định kỳ,staff
+172,2026-04-17T20:00:00,43,purchase,3.0,60546,181638,,Nhập định kỳ,staff
+173,2026-03-06T13:00:00,44,purchase,0.75,60559,45419,,Nhập định kỳ,staff
+174,2026-03-20T13:00:00,44,purchase,1.0,60559,60559,,Nhập định kỳ,staff
+175,2026-04-03T13:00:00,44,purchase,1.25,60559,75698,,Nhập định kỳ,staff
+176,2026-04-17T13:00:00,44,purchase,1.5,60559,90838,,Nhập định kỳ,staff
+177,2026-03-07T06:00:00,45,purchase,450.0,772,347400,,Nhập định kỳ,staff
+178,2026-03-21T06:00:00,45,purchase,600.0,772,463200,,Nhập định kỳ,staff
+179,2026-04-04T06:00:00,45,purchase,750.0,772,579000,,Nhập định kỳ,staff
+180,2026-04-18T06:00:00,45,purchase,900.0,772,694800,,Nhập định kỳ,staff
+181,2026-03-06T23:00:00,46,purchase,300.0,785,235500,,Nhập định kỳ,staff
+182,2026-03-20T23:00:00,46,purchase,400.0,785,314000,,Nhập định kỳ,staff
+183,2026-04-03T23:00:00,46,purchase,500.0,785,392500,,Nhập định kỳ,staff
+184,2026-04-17T23:00:00,46,purchase,600.0,785,471000,,Nhập định kỳ,staff
+185,2026-03-06T16:00:00,47,purchase,300.0,798,239400,,Nhập định kỳ,staff
+186,2026-03-20T16:00:00,47,purchase,400.0,798,319200,,Nhập định kỳ,staff
+187,2026-04-03T16:00:00,47,purchase,500.0,798,399000,,Nhập định kỳ,staff
+188,2026-04-17T16:00:00,47,purchase,600.0,798,478800,,Nhập định kỳ,staff
+189,2026-03-07T09:00:00,48,purchase,150.0,811,121650,,Nhập định kỳ,staff
+190,2026-03-21T09:00:00,48,purchase,200.0,811,162200,,Nhập định kỳ,staff
+191,2026-04-04T09:00:00,48,purchase,250.0,811,202750,,Nhập định kỳ,staff
+192,2026-04-18T09:00:00,48,purchase,300.0,811,243300,,Nhập định kỳ,staff
+193,2026-03-07T02:00:00,49,purchase,750.0,824,618000,,Nhập định kỳ,staff
+194,2026-03-21T02:00:00,49,purchase,1000.0,824,824000,,Nhập định kỳ,staff
+195,2026-04-04T02:00:00,49,purchase,1250.0,824,1030000,,Nhập định kỳ,staff
+196,2026-04-18T02:00:00,49,purchase,1500.0,824,1236000,,Nhập định kỳ,staff
+197,2026-03-06T19:00:00,50,purchase,1.5,60637,90955,,Nhập định kỳ,staff
+198,2026-03-20T19:00:00,50,purchase,2.0,60637,121274,,Nhập định kỳ,staff
+199,2026-04-03T19:00:00,50,purchase,2.5,60637,151592,,Nhập định kỳ,staff
+200,2026-04-17T19:00:00,50,purchase,3.0,60637,181911,,Nhập định kỳ,staff
+201,2026-03-06T12:00:00,51,purchase,1.5,60650,90975,,Nhập định kỳ,staff
+202,2026-03-20T12:00:00,51,purchase,2.0,60650,121300,,Nhập định kỳ,staff
+203,2026-04-03T12:00:00,51,purchase,2.5,60650,151625,,Nhập định kỳ,staff
+204,2026-04-17T12:00:00,51,purchase,3.0,60650,181950,,Nhập định kỳ,staff
+205,2026-03-07T05:00:00,52,purchase,1.5,60663,90994,,Nhập định kỳ,staff
+206,2026-03-21T05:00:00,52,purchase,2.0,60663,121326,,Nhập định kỳ,staff
+207,2026-04-04T05:00:00,52,purchase,2.5,60663,151657,,Nhập định kỳ,staff
+208,2026-04-18T05:00:00,52,purchase,3.0,60663,181989,,Nhập định kỳ,staff
+209,2026-03-06T22:00:00,53,purchase,0.45,60676,27304,,Nhập định kỳ,staff
+210,2026-03-20T22:00:00,53,purchase,0.6,60676,36405,,Nhập định kỳ,staff
+211,2026-04-03T22:00:00,53,purchase,0.75,60676,45507,,Nhập định kỳ,staff
+212,2026-04-17T22:00:00,53,purchase,0.9,60676,54608,,Nhập định kỳ,staff
+213,2026-03-06T15:00:00,54,purchase,3.0,45689,137067,,Nhập định kỳ,staff
+214,2026-03-20T15:00:00,54,purchase,4.0,45689,182756,,Nhập định kỳ,staff
+215,2026-04-03T15:00:00,54,purchase,5.0,45689,228445,,Nhập định kỳ,staff
+216,2026-04-17T15:00:00,54,purchase,6.0,45689,274134,,Nhập định kỳ,staff
+217,2026-03-07T08:00:00,55,purchase,3.0,45702,137106,,Nhập định kỳ,staff
+218,2026-03-21T08:00:00,55,purchase,4.0,45702,182808,,Nhập định kỳ,staff
+219,2026-04-04T08:00:00,55,purchase,5.0,45702,228510,,Nhập định kỳ,staff
+220,2026-04-18T08:00:00,55,purchase,6.0,45702,274212,,Nhập định kỳ,staff
+221,2026-03-07T01:00:00,56,purchase,450.0,915,411750,,Nhập định kỳ,staff
+222,2026-03-21T01:00:00,56,purchase,600.0,915,549000,,Nhập định kỳ,staff
+223,2026-04-04T01:00:00,56,purchase,750.0,915,686250,,Nhập định kỳ,staff
+224,2026-04-18T01:00:00,56,purchase,900.0,915,823500,,Nhập định kỳ,staff
+225,2026-03-06T18:00:00,57,purchase,300.0,928,278400,,Nhập định kỳ,staff
+226,2026-03-20T18:00:00,57,purchase,400.0,928,371200,,Nhập định kỳ,staff
+227,2026-04-03T18:00:00,57,purchase,500.0,928,464000,,Nhập định kỳ,staff
+228,2026-04-17T18:00:00,57,purchase,600.0,928,556800,,Nhập định kỳ,staff
+229,2026-03-06T11:00:00,58,purchase,0.75,60741,45555,,Nhập định kỳ,staff
+230,2026-03-20T11:00:00,58,purchase,1.0,60741,60741,,Nhập định kỳ,staff
+231,2026-04-03T11:00:00,58,purchase,1.25,60741,75926,,Nhập định kỳ,staff
+232,2026-04-17T11:00:00,58,purchase,1.5,60741,91111,,Nhập định kỳ,staff
+233,2026-03-07T04:00:00,59,purchase,0.75,60754,45565,,Nhập định kỳ,staff
+234,2026-03-21T04:00:00,59,purchase,1.0,60754,60754,,Nhập định kỳ,staff
+235,2026-04-04T04:00:00,59,purchase,1.25,60754,75942,,Nhập định kỳ,staff
+236,2026-04-18T04:00:00,59,purchase,1.5,60754,91131,,Nhập định kỳ,staff
+237,2026-03-06T21:00:00,60,purchase,0.75,60767,45575,,Nhập định kỳ,staff
+238,2026-03-20T21:00:00,60,purchase,1.0,60767,60767,,Nhập định kỳ,staff
+239,2026-04-03T21:00:00,60,purchase,1.25,60767,75958,,Nhập định kỳ,staff
+240,2026-04-17T21:00:00,60,purchase,1.5,60767,91150,,Nhập định kỳ,staff
+241,2026-03-07T10:00:00,1,consumption,200.0,,,1,order #1,system
+242,2026-03-07T10:00:00,3,consumption,100.0,,,1,order #1,system
+243,2026-03-07T10:00:00,4,consumption,150.0,,,1,order #1,system
+244,2026-03-07T10:00:00,1,consumption,200.0,,,1,order #1,system
+245,2026-03-07T10:00:00,3,consumption,100.0,,,1,order #1,system
+246,2026-03-07T10:00:00,4,consumption,150.0,,,1,order #1,system
+247,2026-03-08T07:00:00,1,consumption,200.0,,,2,order #2,system
+248,2026-03-08T07:00:00,3,consumption,100.0,,,2,order #2,system
+249,2026-03-08T07:00:00,4,consumption,150.0,,,2,order #2,system
+250,2026-03-08T07:00:00,1,consumption,200.0,,,2,order #2,system
+251,2026-03-08T07:00:00,3,consumption,100.0,,,2,order #2,system
+252,2026-03-08T07:00:00,4,consumption,150.0,,,2,order #2,system
+253,2026-03-09T04:00:00,1,consumption,200.0,,,3,order #3,system
+254,2026-03-09T04:00:00,3,consumption,100.0,,,3,order #3,system
+255,2026-03-09T04:00:00,4,consumption,150.0,,,3,order #3,system
+256,2026-03-09T04:00:00,1,consumption,200.0,,,3,order #3,system
+257,2026-03-09T04:00:00,3,consumption,100.0,,,3,order #3,system
+258,2026-03-09T04:00:00,4,consumption,150.0,,,3,order #3,system
+259,2026-03-10T01:00:00,1,consumption,200.0,,,4,order #4,system
+260,2026-03-10T01:00:00,3,consumption,100.0,,,4,order #4,system
+261,2026-03-10T01:00:00,4,consumption,150.0,,,4,order #4,system
+262,2026-03-10T01:00:00,1,consumption,200.0,,,4,order #4,system
+263,2026-03-10T01:00:00,3,consumption,100.0,,,4,order #4,system
+264,2026-03-10T01:00:00,4,consumption,150.0,,,4,order #4,system
+265,2026-03-10T22:00:00,1,consumption,200.0,,,5,order #5,system
+266,2026-03-10T22:00:00,3,consumption,100.0,,,5,order #5,system
+267,2026-03-10T22:00:00,4,consumption,150.0,,,5,order #5,system
+268,2026-03-10T22:00:00,1,consumption,200.0,,,5,order #5,system
+269,2026-03-10T22:00:00,3,consumption,100.0,,,5,order #5,system
+270,2026-03-10T22:00:00,4,consumption,150.0,,,5,order #5,system
+271,2026-03-11T19:00:00,1,consumption,200.0,,,6,order #6,system
+272,2026-03-11T19:00:00,3,consumption,100.0,,,6,order #6,system
+273,2026-03-11T19:00:00,4,consumption,150.0,,,6,order #6,system
+274,2026-03-11T19:00:00,1,consumption,200.0,,,6,order #6,system
+275,2026-03-11T19:00:00,3,consumption,100.0,,,6,order #6,system
+276,2026-03-11T19:00:00,4,consumption,150.0,,,6,order #6,system
+277,2026-03-12T16:00:00,1,consumption,200.0,,,7,order #7,system
+278,2026-03-12T16:00:00,3,consumption,100.0,,,7,order #7,system
+279,2026-03-12T16:00:00,4,consumption,150.0,,,7,order #7,system
+280,2026-03-12T16:00:00,1,consumption,200.0,,,7,order #7,system
+281,2026-03-12T16:00:00,3,consumption,100.0,,,7,order #7,system
+282,2026-03-12T16:00:00,4,consumption,150.0,,,7,order #7,system
+283,2026-03-13T13:00:00,1,consumption,200.0,,,8,order #8,system
+284,2026-03-13T13:00:00,3,consumption,100.0,,,8,order #8,system
+285,2026-03-13T13:00:00,4,consumption,150.0,,,8,order #8,system
+286,2026-03-13T13:00:00,1,consumption,200.0,,,8,order #8,system
+287,2026-03-13T13:00:00,3,consumption,100.0,,,8,order #8,system
+288,2026-03-13T13:00:00,4,consumption,150.0,,,8,order #8,system
+289,2026-03-15T10:00:00,1,consumption,200.0,,,9,order #9,system
+290,2026-03-15T10:00:00,3,consumption,100.0,,,9,order #9,system
+291,2026-03-15T10:00:00,4,consumption,150.0,,,9,order #9,system
+292,2026-03-15T10:00:00,1,consumption,200.0,,,9,order #9,system
+293,2026-03-15T10:00:00,3,consumption,100.0,,,9,order #9,system
+294,2026-03-15T10:00:00,4,consumption,150.0,,,9,order #9,system
+295,2026-03-16T07:00:00,1,consumption,200.0,,,10,order #10,system
+296,2026-03-16T07:00:00,3,consumption,100.0,,,10,order #10,system
+297,2026-03-16T07:00:00,4,consumption,150.0,,,10,order #10,system
+298,2026-03-16T07:00:00,1,consumption,200.0,,,10,order #10,system
+299,2026-03-16T07:00:00,3,consumption,100.0,,,10,order #10,system
+300,2026-03-16T07:00:00,4,consumption,150.0,,,10,order #10,system
+301,2026-03-17T04:00:00,1,consumption,200.0,,,11,order #11,system
+302,2026-03-17T04:00:00,3,consumption,100.0,,,11,order #11,system
+303,2026-03-17T04:00:00,4,consumption,150.0,,,11,order #11,system
+304,2026-03-18T01:00:00,1,consumption,200.0,,,12,order #12,system
+305,2026-03-18T01:00:00,3,consumption,100.0,,,12,order #12,system
+306,2026-03-18T01:00:00,4,consumption,150.0,,,12,order #12,system
+307,2026-03-18T01:00:00,1,consumption,200.0,,,12,order #12,system
+308,2026-03-18T01:00:00,3,consumption,100.0,,,12,order #12,system
+309,2026-03-18T01:00:00,4,consumption,150.0,,,12,order #12,system
+310,2026-03-18T22:00:00,1,consumption,200.0,,,13,order #13,system
+311,2026-03-18T22:00:00,3,consumption,100.0,,,13,order #13,system
+312,2026-03-18T22:00:00,4,consumption,150.0,,,13,order #13,system
+313,2026-03-18T22:00:00,1,consumption,200.0,,,13,order #13,system
+314,2026-03-18T22:00:00,3,consumption,100.0,,,13,order #13,system
+315,2026-03-18T22:00:00,4,consumption,150.0,,,13,order #13,system
+316,2026-03-19T19:00:00,1,consumption,200.0,,,14,order #14,system
+317,2026-03-19T19:00:00,3,consumption,100.0,,,14,order #14,system
+318,2026-03-19T19:00:00,4,consumption,150.0,,,14,order #14,system
+319,2026-03-19T19:00:00,1,consumption,200.0,,,14,order #14,system
+320,2026-03-19T19:00:00,3,consumption,100.0,,,14,order #14,system
+321,2026-03-19T19:00:00,4,consumption,150.0,,,14,order #14,system
+322,2026-03-20T16:00:00,1,consumption,200.0,,,15,order #15,system
+323,2026-03-20T16:00:00,3,consumption,100.0,,,15,order #15,system
+324,2026-03-20T16:00:00,4,consumption,150.0,,,15,order #15,system
+325,2026-03-20T16:00:00,1,consumption,200.0,,,15,order #15,system
+326,2026-03-20T16:00:00,3,consumption,100.0,,,15,order #15,system
+327,2026-03-20T16:00:00,4,consumption,150.0,,,15,order #15,system
+328,2026-03-21T13:00:00,1,consumption,200.0,,,16,order #16,system
+329,2026-03-21T13:00:00,3,consumption,100.0,,,16,order #16,system
+330,2026-03-21T13:00:00,4,consumption,150.0,,,16,order #16,system
+331,2026-03-21T13:00:00,1,consumption,200.0,,,16,order #16,system
+332,2026-03-21T13:00:00,3,consumption,100.0,,,16,order #16,system
+333,2026-03-21T13:00:00,4,consumption,150.0,,,16,order #16,system
+334,2026-03-23T10:00:00,1,consumption,200.0,,,17,order #17,system
+335,2026-03-23T10:00:00,3,consumption,100.0,,,17,order #17,system
+336,2026-03-23T10:00:00,4,consumption,150.0,,,17,order #17,system
+337,2026-03-23T10:00:00,1,consumption,200.0,,,17,order #17,system
+338,2026-03-23T10:00:00,3,consumption,100.0,,,17,order #17,system
+339,2026-03-23T10:00:00,4,consumption,150.0,,,17,order #17,system
+340,2026-03-24T07:00:00,1,consumption,200.0,,,18,order #18,system
+341,2026-03-24T07:00:00,3,consumption,100.0,,,18,order #18,system
+342,2026-03-24T07:00:00,4,consumption,150.0,,,18,order #18,system
+343,2026-03-24T07:00:00,1,consumption,200.0,,,18,order #18,system
+344,2026-03-24T07:00:00,3,consumption,100.0,,,18,order #18,system
+345,2026-03-24T07:00:00,4,consumption,150.0,,,18,order #18,system
+346,2026-03-25T04:00:00,1,consumption,200.0,,,19,order #19,system
+347,2026-03-25T04:00:00,3,consumption,100.0,,,19,order #19,system
+348,2026-03-25T04:00:00,4,consumption,150.0,,,19,order #19,system
+349,2026-03-25T04:00:00,1,consumption,200.0,,,19,order #19,system
+350,2026-03-25T04:00:00,3,consumption,100.0,,,19,order #19,system
+351,2026-03-25T04:00:00,4,consumption,150.0,,,19,order #19,system
+352,2026-03-26T01:00:00,1,consumption,200.0,,,20,order #20,system
+353,2026-03-26T01:00:00,3,consumption,100.0,,,20,order #20,system
+354,2026-03-26T01:00:00,4,consumption,150.0,,,20,order #20,system
+355,2026-03-26T01:00:00,1,consumption,200.0,,,20,order #20,system
+356,2026-03-26T01:00:00,3,consumption,100.0,,,20,order #20,system
+357,2026-03-26T01:00:00,4,consumption,150.0,,,20,order #20,system
+358,2026-03-26T22:00:00,1,consumption,200.0,,,21,order #21,system
+359,2026-03-26T22:00:00,3,consumption,100.0,,,21,order #21,system
+360,2026-03-26T22:00:00,4,consumption,150.0,,,21,order #21,system
+361,2026-03-26T22:00:00,1,consumption,200.0,,,21,order #21,system
+362,2026-03-26T22:00:00,3,consumption,100.0,,,21,order #21,system
+363,2026-03-26T22:00:00,4,consumption,150.0,,,21,order #21,system
+364,2026-03-27T19:00:00,1,consumption,200.0,,,22,order #22,system
+365,2026-03-27T19:00:00,3,consumption,100.0,,,22,order #22,system
+366,2026-03-27T19:00:00,4,consumption,150.0,,,22,order #22,system
+367,2026-03-27T19:00:00,1,consumption,200.0,,,22,order #22,system
+368,2026-03-27T19:00:00,3,consumption,100.0,,,22,order #22,system
+369,2026-03-27T19:00:00,4,consumption,150.0,,,22,order #22,system
+370,2026-03-28T16:00:00,1,consumption,200.0,,,23,order #23,system
+371,2026-03-28T16:00:00,3,consumption,100.0,,,23,order #23,system
+372,2026-03-28T16:00:00,4,consumption,150.0,,,23,order #23,system
+373,2026-03-29T13:00:00,1,consumption,200.0,,,24,order #24,system
+374,2026-03-29T13:00:00,3,consumption,100.0,,,24,order #24,system
+375,2026-03-29T13:00:00,4,consumption,150.0,,,24,order #24,system
+376,2026-03-29T13:00:00,1,consumption,200.0,,,24,order #24,system
+377,2026-03-29T13:00:00,3,consumption,100.0,,,24,order #24,system
+378,2026-03-29T13:00:00,4,consumption,150.0,,,24,order #24,system
+379,2026-03-31T10:00:00,1,consumption,200.0,,,25,order #25,system
+380,2026-03-31T10:00:00,3,consumption,100.0,,,25,order #25,system
+381,2026-03-31T10:00:00,4,consumption,150.0,,,25,order #25,system
+382,2026-03-31T10:00:00,1,consumption,200.0,,,25,order #25,system
+383,2026-03-31T10:00:00,3,consumption,100.0,,,25,order #25,system
+384,2026-03-31T10:00:00,4,consumption,150.0,,,25,order #25,system
+385,2026-04-01T07:00:00,1,consumption,200.0,,,26,order #26,system
+386,2026-04-01T07:00:00,3,consumption,100.0,,,26,order #26,system
+387,2026-04-01T07:00:00,4,consumption,150.0,,,26,order #26,system
+388,2026-04-01T07:00:00,1,consumption,200.0,,,26,order #26,system
+389,2026-04-01T07:00:00,3,consumption,100.0,,,26,order #26,system
+390,2026-04-01T07:00:00,4,consumption,150.0,,,26,order #26,system
+391,2026-04-02T04:00:00,1,consumption,200.0,,,27,order #27,system
+392,2026-04-02T04:00:00,3,consumption,100.0,,,27,order #27,system
+393,2026-04-02T04:00:00,4,consumption,150.0,,,27,order #27,system
+394,2026-04-02T04:00:00,1,consumption,200.0,,,27,order #27,system
+395,2026-04-02T04:00:00,3,consumption,100.0,,,27,order #27,system
+396,2026-04-02T04:00:00,4,consumption,150.0,,,27,order #27,system
+397,2026-04-03T01:00:00,1,consumption,200.0,,,28,order #28,system
+398,2026-04-03T01:00:00,3,consumption,100.0,,,28,order #28,system
+399,2026-04-03T01:00:00,4,consumption,150.0,,,28,order #28,system
+400,2026-04-03T01:00:00,1,consumption,200.0,,,28,order #28,system
+401,2026-04-03T01:00:00,3,consumption,100.0,,,28,order #28,system
+402,2026-04-03T01:00:00,4,consumption,150.0,,,28,order #28,system
+403,2026-04-03T22:00:00,1,consumption,200.0,,,29,order #29,system
+404,2026-04-03T22:00:00,3,consumption,100.0,,,29,order #29,system
+405,2026-04-03T22:00:00,4,consumption,150.0,,,29,order #29,system
+406,2026-04-03T22:00:00,1,consumption,200.0,,,29,order #29,system
+407,2026-04-03T22:00:00,3,consumption,100.0,,,29,order #29,system
+408,2026-04-03T22:00:00,4,consumption,150.0,,,29,order #29,system
+409,2026-04-04T19:00:00,1,consumption,200.0,,,30,order #30,system
+410,2026-04-04T19:00:00,3,consumption,100.0,,,30,order #30,system
+411,2026-04-04T19:00:00,4,consumption,150.0,,,30,order #30,system
+412,2026-04-04T19:00:00,1,consumption,200.0,,,30,order #30,system
+413,2026-04-04T19:00:00,3,consumption,100.0,,,30,order #30,system
+414,2026-04-04T19:00:00,4,consumption,150.0,,,30,order #30,system

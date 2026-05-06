@@ -1,0 +1,215 @@
+# GENERATED — Sheet tab schema for ngot_pastry. Source of truth.
+# 15 entity tabs + 2 internal tabs (_telegram_offset, _locks).
+# Mirrors design.md §2 exactly. Do not edit by hand without re-running checks.
+
+version: "1.0.0"
+spreadsheet_locale: "vi-VN"
+
+tabs:
+  Settings:
+    headers: [id, key, value, is_secret, updated_at, updated_by]
+    types:
+      id: int
+      key: string
+      value: text
+      is_secret: bool
+      updated_at: datetime
+      updated_by: enum
+
+  AuditLog:
+    headers: [id, occurred_at, actor_role, action, target_kind, target_id, diff]
+    types:
+      id: int
+      occurred_at: datetime
+      actor_role: enum
+      action: string
+      target_kind: string
+      target_id: int
+      diff: text
+
+  Customers:
+    headers: [id, phone, name, default_address, ward, district, city, notes, consent_pdpl, consent_at, created_at, created_by]
+    types:
+      id: int
+      phone: string
+      name: string
+      default_address: text
+      ward: string
+      district: string
+      city: string
+      notes: text
+      consent_pdpl: bool
+      consent_at: datetime
+      created_at: datetime
+      created_by: enum
+
+  Dishes:
+    headers: [id, name_vi, name_en, category, price_vnd, size, description_vi, image_url, is_active, retired_at, display_order, allergens]
+    types:
+      id: int
+      name_vi: string
+      name_en: string
+      category: enum
+      price_vnd: decimal
+      size: string
+      description_vi: text
+      image_url: string
+      is_active: bool
+      retired_at: datetime
+      display_order: int
+      allergens: json
+
+  Recipes:
+    headers: [id, dish_id, ingredient_id, quantity, unit, notes_vi]
+    types:
+      id: int
+      dish_id: int
+      ingredient_id: int
+      quantity: decimal
+      unit: string
+      notes_vi: text
+
+  Ingredients:
+    headers: [id, name_vi, unit, current_stock, reorder_threshold, last_purchase_price_vnd, weighted_avg_cost_vnd, supplier_name, supplier_phone, notes]
+    types:
+      id: int
+      name_vi: string
+      unit: string
+      current_stock: decimal
+      reorder_threshold: decimal
+      last_purchase_price_vnd: decimal
+      weighted_avg_cost_vnd: decimal
+      supplier_name: string
+      supplier_phone: string
+      notes: text
+
+  InventoryMovements:
+    headers: [id, occurred_at, ingredient_id, kind, quantity, unit_price_vnd, total_vnd, related_order_id, notes, recorded_by]
+    types:
+      id: int
+      occurred_at: datetime
+      ingredient_id: int
+      kind: enum
+      quantity: decimal
+      unit_price_vnd: decimal
+      total_vnd: decimal
+      related_order_id: int
+      notes: text
+      recorded_by: enum
+
+  Orders:
+    headers: [id, customer_id, status, order_date, delivery_date, delivery_address, subtotal_vnd, discount_kind, discount_value, campaign_id, total_vnd, paid_at, payment_method, notes, source, confirmed_at, created_by]
+    types:
+      id: int
+      customer_id: int
+      status: enum
+      order_date: datetime
+      delivery_date: datetime
+      delivery_address: text
+      subtotal_vnd: decimal
+      discount_kind: enum
+      discount_value: decimal
+      campaign_id: int
+      total_vnd: decimal
+      paid_at: datetime
+      payment_method: enum
+      notes: text
+      source: enum
+      confirmed_at: datetime
+      created_by: enum
+
+  OrderItems:
+    headers: [id, order_id, dish_id, dish_name_snapshot, quantity, unit_price_vnd, subtotal_vnd, notes]
+    types:
+      id: int
+      order_id: int
+      dish_id: int
+      dish_name_snapshot: string
+      quantity: int
+      unit_price_vnd: decimal
+      subtotal_vnd: decimal
+      notes: text
+
+  Equipment:
+    headers: [id, name_vi, purchased_at, purchase_price_vnd, useful_life_months, salvage_value_vnd, monthly_depreciation_vnd, is_active, notes]
+    types:
+      id: int
+      name_vi: string
+      purchased_at: datetime
+      purchase_price_vnd: decimal
+      useful_life_months: int
+      salvage_value_vnd: decimal
+      monthly_depreciation_vnd: decimal
+      is_active: bool
+      notes: text
+
+  Campaigns:
+    headers: [id, name_vi, discount_kind, discount_value, applies_to, applies_to_value, starts_at, ends_at, is_active, stack_with_others]
+    types:
+      id: int
+      name_vi: string
+      discount_kind: enum
+      discount_value: decimal
+      applies_to: enum
+      applies_to_value: string
+      starts_at: datetime
+      ends_at: datetime
+      is_active: bool
+      stack_with_others: bool
+
+  TelegramMessages:
+    headers: [id, telegram_msg_id, chat_id, sender_name, sender_phone, received_at, raw_text, parse_status, parsed_json, related_order_id, reviewed_by, reviewed_at]
+    types:
+      id: int
+      telegram_msg_id: int
+      chat_id: int
+      sender_name: string
+      sender_phone: string
+      received_at: datetime
+      raw_text: text
+      parse_status: enum
+      parsed_json: text
+      related_order_id: int
+      reviewed_by: enum
+      reviewed_at: datetime
+
+  AssistantSkills:
+    headers: [id, name, display_name_vi, trigger, event_kind, prompt_template, output_schema, is_enabled, updated_at]
+    types:
+      id: int
+      name: string
+      display_name_vi: string
+      trigger: enum
+      event_kind: string
+      prompt_template: text
+      output_schema: json
+      is_enabled: bool
+      updated_at: datetime
+
+  AssistantCallLog:
+    headers: [id, skill_id, invoked_at, invoked_by, input_text, output_text, token_count_input, token_count_output, latency_ms, status, error_message]
+    types:
+      id: int
+      skill_id: int
+      invoked_at: datetime
+      invoked_by: enum
+      input_text: text
+      output_text: text
+      token_count_input: int
+      token_count_output: int
+      latency_ms: int
+      status: enum
+      error_message: text
+
+  _telegram_offset:
+    headers: [offset_int, updated_at]
+    types:
+      offset_int: int
+      updated_at: datetime
+
+  _locks:
+    headers: [lock_name, locked_at, locked_by]
+    types:
+      lock_name: string
+      locked_at: datetime
+      locked_by: string

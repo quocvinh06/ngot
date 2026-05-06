@@ -1,0 +1,61 @@
+id,customer_id,status,order_date,delivery_date,delivery_address,subtotal_vnd,discount_kind,discount_value,campaign_id,total_vnd,paid_at,payment_method,notes,source,confirmed_at,created_by
+1,1,delivered,2026-03-07T09:00:00,2026-03-08T09:00:00,"1 đường Lê Lợi, Phường Bến Nghé, Quận 1",65000,fixed,10000,,55000,2026-03-08T11:00:00,vietqr,Gói quà sinh nhật,telegram,2026-03-07T10:00:00,telegram
+2,2,delivered,2026-03-08T06:00:00,2026-03-10T06:00:00,"12 đường Lê Lợi, Phường Bến Thành, Quận 1",1190000,none,,,1190000,2026-03-10T08:00:00,cash,,manual,2026-03-08T07:00:00,staff
+3,3,delivered,2026-03-09T03:00:00,2026-03-12T03:00:00,"23 đường Lê Lợi, Phường Đa Kao, Quận 1",676000,none,,,676000,2026-03-12T05:00:00,bank_transfer,,manual,2026-03-09T04:00:00,staff
+4,4,delivered,2026-03-10T00:00:00,2026-03-14T00:00:00,"34 đường Lê Lợi, Phường 7, Quận 3",303000,none,,,303000,2026-03-14T02:00:00,vietqr,,manual,2026-03-10T01:00:00,staff
+5,5,delivered,2026-03-10T21:00:00,2026-03-15T21:00:00,"45 đường Lê Lợi, Phường 8, Quận 3",1836000,none,,,1836000,2026-03-15T23:00:00,cash,,telegram,2026-03-10T22:00:00,telegram
+6,6,delivered,2026-03-11T18:00:00,2026-03-12T18:00:00,"56 đường Lê Lợi, Phường 11, Quận 5",1740000,none,,,1740000,2026-03-12T20:00:00,bank_transfer,,manual,2026-03-11T19:00:00,staff
+7,7,delivered,2026-03-12T15:00:00,2026-03-14T15:00:00,"67 đường Lê Lợi, Phường 1, Quận 6",762000,none,,,762000,2026-03-14T17:00:00,vietqr,,manual,2026-03-12T16:00:00,staff
+8,8,delivered,2026-03-13T12:00:00,2026-03-16T12:00:00,"78 đường Lê Lợi, Phường 9, Quận 10",734000,none,,,734000,2026-03-16T14:00:00,cash,,manual,2026-03-13T13:00:00,staff
+9,9,delivered,2026-03-15T09:00:00,2026-03-19T09:00:00,"89 đường Lê Lợi, Phường 14, Quận 10",442000,pct,10,,398000,2026-03-19T11:00:00,bank_transfer,,telegram,2026-03-15T10:00:00,telegram
+10,10,delivered,2026-03-16T06:00:00,2026-03-21T06:00:00,"100 đường Lê Lợi, Phường 12, Quận Tân Bình",973000,none,,,973000,2026-03-21T08:00:00,vietqr,,manual,2026-03-16T07:00:00,staff
+11,11,delivered,2026-03-17T03:00:00,2026-03-18T03:00:00,"111 đường Lê Lợi, Phường Tân Định, Quận 1",760000,none,,,760000,2026-03-18T05:00:00,cash,,manual,2026-03-17T04:00:00,staff
+12,12,delivered,2026-03-18T00:00:00,2026-03-20T00:00:00,"122 đường Lê Lợi, Phường 25, Quận Bình Thạnh",1190000,fixed,10000,,1180000,2026-03-20T02:00:00,bank_transfer,,manual,2026-03-18T01:00:00,staff
+13,13,delivered,2026-03-18T21:00:00,2026-03-21T21:00:00,"133 đường Lê Lợi, Phường 26, Quận Bình Thạnh",143000,none,,,143000,2026-03-21T23:00:00,vietqr,Gói quà sinh nhật,telegram,2026-03-18T22:00:00,telegram
+14,14,delivered,2026-03-19T18:00:00,2026-03-23T18:00:00,"144 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",2182000,none,,,2182000,2026-03-23T20:00:00,cash,,manual,2026-03-19T19:00:00,staff
+15,15,delivered,2026-03-20T15:00:00,2026-03-25T15:00:00,"155 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",1345000,none,,,1345000,2026-03-25T17:00:00,bank_transfer,,manual,2026-03-20T16:00:00,staff
+16,16,delivered,2026-03-21T12:00:00,2026-03-22T12:00:00,"166 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",360000,none,,,360000,2026-03-22T14:00:00,vietqr,,manual,2026-03-21T13:00:00,staff
+17,17,delivered,2026-03-23T09:00:00,2026-03-25T09:00:00,"177 đường Lê Lợi, Phường Phan Chu Trinh, Quận Hoàn Kiếm",128000,pct,10,,115000,2026-03-25T11:00:00,cash,,telegram,2026-03-23T10:00:00,telegram
+18,18,delivered,2026-03-24T06:00:00,2026-03-27T06:00:00,"188 đường Lê Lợi, Phường Trúc Bạch, Quận Ba Đình",326000,none,,,326000,2026-03-27T08:00:00,bank_transfer,,manual,2026-03-24T07:00:00,staff
+19,19,delivered,2026-03-25T03:00:00,2026-03-29T03:00:00,"199 đường Lê Lợi, Phường Quan Hoa, Quận Cầu Giấy",2190000,none,,,2190000,2026-03-29T05:00:00,vietqr,,manual,2026-03-25T04:00:00,staff
+20,20,delivered,2026-03-26T00:00:00,2026-03-31T00:00:00,"10 đường Lê Lợi, Phường Yên Hoà, Quận Cầu Giấy",971000,none,,,971000,2026-03-31T02:00:00,cash,,manual,2026-03-26T01:00:00,staff
+21,21,delivered,2026-03-26T21:00:00,2026-03-27T21:00:00,"21 đường Lê Lợi, Phường Mỹ Đình 1, Quận Nam Từ Liêm",330000,none,,,330000,2026-03-27T23:00:00,bank_transfer,,telegram,2026-03-26T22:00:00,telegram
+22,22,delivered,2026-03-27T18:00:00,2026-03-29T18:00:00,"32 đường Lê Lợi, Phường Trung Hoà, Quận Cầu Giấy",36000,none,,,36000,2026-03-29T20:00:00,vietqr,,manual,2026-03-27T19:00:00,staff
+23,23,delivered,2026-03-28T15:00:00,2026-03-31T15:00:00,"43 đường Lê Lợi, Phường Bến Nghé, Quận 1",1261000,fixed,10000,,1251000,2026-03-31T17:00:00,cash,,manual,2026-03-28T16:00:00,staff
+24,24,delivered,2026-03-29T12:00:00,2026-04-02T12:00:00,"54 đường Lê Lợi, Phường Bến Thành, Quận 1",1465000,none,,,1465000,2026-04-02T14:00:00,bank_transfer,,manual,2026-03-29T13:00:00,staff
+25,25,delivered,2026-03-31T09:00:00,2026-04-05T09:00:00,"65 đường Lê Lợi, Phường Đa Kao, Quận 1",326000,pct,10,,293000,2026-04-05T11:00:00,vietqr,Gói quà sinh nhật,telegram,2026-03-31T10:00:00,telegram
+26,26,delivered,2026-04-01T06:00:00,2026-04-02T06:00:00,"76 đường Lê Lợi, Phường 7, Quận 3",56000,none,,,56000,2026-04-02T08:00:00,cash,,manual,2026-04-01T07:00:00,staff
+27,27,delivered,2026-04-02T03:00:00,2026-04-04T03:00:00,"87 đường Lê Lợi, Phường 8, Quận 3",161000,none,,,161000,2026-04-04T05:00:00,bank_transfer,,manual,2026-04-02T04:00:00,staff
+28,28,delivered,2026-04-03T00:00:00,2026-04-06T00:00:00,"98 đường Lê Lợi, Phường 11, Quận 5",1486000,none,,,1486000,2026-04-06T02:00:00,vietqr,,manual,2026-04-03T01:00:00,staff
+29,29,delivered,2026-04-03T21:00:00,2026-04-07T21:00:00,"109 đường Lê Lợi, Phường 1, Quận 6",499000,none,,,499000,2026-04-07T23:00:00,cash,,telegram,2026-04-03T22:00:00,telegram
+30,30,delivered,2026-04-04T18:00:00,2026-04-09T18:00:00,"120 đường Lê Lợi, Phường 9, Quận 10",1151000,none,,,1151000,2026-04-09T20:00:00,bank_transfer,,manual,2026-04-04T19:00:00,staff
+31,31,delivered,2026-04-05T15:00:00,2026-04-06T15:00:00,"131 đường Lê Lợi, Phường 14, Quận 10",14000,none,,,14000,2026-04-06T17:00:00,vietqr,,manual,2026-04-05T16:00:00,staff
+32,32,delivered,2026-04-06T12:00:00,2026-04-08T12:00:00,"142 đường Lê Lợi, Phường 12, Quận Tân Bình",969000,none,,,969000,2026-04-08T14:00:00,cash,,manual,2026-04-06T13:00:00,staff
+33,33,delivered,2026-04-08T09:00:00,2026-04-11T09:00:00,"153 đường Lê Lợi, Phường Tân Định, Quận 1",1705000,pct,10,,1534000,2026-04-11T11:00:00,bank_transfer,,telegram,2026-04-08T10:00:00,telegram
+34,34,delivered,2026-04-09T06:00:00,2026-04-13T06:00:00,"164 đường Lê Lợi, Phường 25, Quận Bình Thạnh",216000,fixed,10000,,206000,2026-04-13T08:00:00,vietqr,,manual,2026-04-09T07:00:00,staff
+35,35,delivered,2026-04-10T03:00:00,2026-04-15T03:00:00,"175 đường Lê Lợi, Phường 26, Quận Bình Thạnh",1634000,none,,,1634000,2026-04-15T05:00:00,cash,,manual,2026-04-10T04:00:00,staff
+36,36,delivered,2026-04-11T00:00:00,2026-04-12T00:00:00,"186 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",285000,none,,,285000,2026-04-12T02:00:00,bank_transfer,,manual,2026-04-11T01:00:00,staff
+37,37,delivered,2026-04-11T21:00:00,2026-04-13T21:00:00,"197 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",736000,none,,,736000,2026-04-13T23:00:00,vietqr,Gói quà sinh nhật,telegram,2026-04-11T22:00:00,telegram
+38,38,delivered,2026-04-12T18:00:00,2026-04-15T18:00:00,"8 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",517000,none,,,517000,2026-04-15T20:00:00,cash,,manual,2026-04-12T19:00:00,staff
+39,39,delivered,2026-04-13T15:00:00,2026-04-17T15:00:00,"19 đường Lê Lợi, Phường Phan Chu Trinh, Quận Hoàn Kiếm",2101000,none,,,2101000,2026-04-17T17:00:00,bank_transfer,,manual,2026-04-13T16:00:00,staff
+40,40,delivered,2026-04-14T12:00:00,2026-04-19T12:00:00,"30 đường Lê Lợi, Phường Trúc Bạch, Quận Ba Đình",1388000,none,,,1388000,2026-04-19T14:00:00,vietqr,,manual,2026-04-14T13:00:00,staff
+41,41,in_progress,2026-04-16T09:00:00,2026-04-17T09:00:00,"41 đường Lê Lợi, Phường Quan Hoa, Quận Cầu Giấy",590000,pct,10,,531000,,,,telegram,2026-04-16T10:00:00,telegram
+42,42,in_progress,2026-04-17T06:00:00,2026-04-19T06:00:00,"52 đường Lê Lợi, Phường Yên Hoà, Quận Cầu Giấy",475000,none,,,475000,,,,manual,2026-04-17T07:00:00,staff
+43,43,in_progress,2026-04-18T03:00:00,2026-04-21T03:00:00,"63 đường Lê Lợi, Phường Mỹ Đình 1, Quận Nam Từ Liêm",273000,none,,,273000,,vietqr,,manual,2026-04-18T04:00:00,staff
+44,44,in_progress,2026-04-19T00:00:00,2026-04-23T00:00:00,"74 đường Lê Lợi, Phường Trung Hoà, Quận Cầu Giấy",1781000,none,,,1781000,,,,manual,2026-04-19T01:00:00,staff
+45,45,in_progress,2026-04-19T21:00:00,2026-04-24T21:00:00,"85 đường Lê Lợi, Phường Bến Nghé, Quận 1",2269000,fixed,10000,,2259000,,,,telegram,2026-04-19T22:00:00,telegram
+46,46,in_progress,2026-04-20T18:00:00,2026-04-21T18:00:00,"96 đường Lê Lợi, Phường Bến Thành, Quận 1",28000,none,,,28000,,vietqr,,manual,2026-04-20T19:00:00,staff
+47,47,in_progress,2026-04-21T15:00:00,2026-04-23T15:00:00,"107 đường Lê Lợi, Phường Đa Kao, Quận 1",226000,none,,,226000,,,,manual,2026-04-21T16:00:00,staff
+48,48,in_progress,2026-04-22T12:00:00,2026-04-25T12:00:00,"118 đường Lê Lợi, Phường 7, Quận 3",1410000,none,,,1410000,,,,manual,2026-04-22T13:00:00,staff
+49,49,ready,2026-04-24T09:00:00,2026-04-28T09:00:00,"129 đường Lê Lợi, Phường 8, Quận 3",854000,pct,10,,769000,,vietqr,Gói quà sinh nhật,telegram,2026-04-24T10:00:00,telegram
+50,50,ready,2026-04-25T06:00:00,2026-04-30T06:00:00,"140 đường Lê Lợi, Phường 11, Quận 5",1364000,none,,,1364000,,,,manual,2026-04-25T07:00:00,staff
+51,51,ready,2026-04-26T03:00:00,2026-04-27T03:00:00,"151 đường Lê Lợi, Phường 1, Quận 6",840000,none,,,840000,,,,manual,2026-04-26T04:00:00,staff
+52,52,ready,2026-04-27T00:00:00,2026-04-29T00:00:00,"162 đường Lê Lợi, Phường 9, Quận 10",160000,none,,,160000,,vietqr,,manual,2026-04-27T01:00:00,staff
+53,53,confirmed,2026-04-27T21:00:00,2026-04-30T21:00:00,"173 đường Lê Lợi, Phường 14, Quận 10",1095000,none,,,1095000,,,,telegram,2026-04-27T22:00:00,telegram
+54,54,confirmed,2026-04-28T18:00:00,2026-05-02T18:00:00,"184 đường Lê Lợi, Phường 12, Quận Tân Bình",2642000,none,,,2642000,,,,manual,2026-04-28T19:00:00,staff
+55,55,confirmed,2026-04-29T15:00:00,2026-05-04T15:00:00,"195 đường Lê Lợi, Phường Tân Định, Quận 1",831000,none,,,831000,,vietqr,,manual,2026-04-29T16:00:00,staff
+56,56,confirmed,2026-04-30T12:00:00,2026-05-01T12:00:00,"6 đường Lê Lợi, Phường 25, Quận Bình Thạnh",24000,fixed,10000,,14000,,,,manual,2026-04-30T13:00:00,staff
+57,57,cancelled,2026-05-02T09:00:00,2026-05-04T09:00:00,"17 đường Lê Lợi, Phường 26, Quận Bình Thạnh",1015000,pct,10,,914000,,,,telegram,,telegram
+58,58,cancelled,2026-05-03T06:00:00,2026-05-06T06:00:00,"28 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",1329000,none,,,1329000,,vietqr,,manual,,staff
+59,59,draft,2026-05-04T03:00:00,2026-05-08T03:00:00,"39 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",1598000,none,,,1598000,,,,manual,,staff
+60,60,draft,2026-05-05T00:00:00,2026-05-10T00:00:00,"50 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",346000,none,,,346000,,,,manual,,staff

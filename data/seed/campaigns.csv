@@ -1,0 +1,9 @@
+id,name_vi,discount_kind,discount_value,applies_to,applies_to_value,starts_at,ends_at,is_active,stack_with_others
+1,Khai trương -10%,pct,10,all,,2026-04-06T09:00:00,2026-06-05T09:00:00,TRUE,FALSE
+2,Sinh nhật khách -15%,pct,15,all,,2026-04-26T09:00:00,2026-07-05T09:00:00,TRUE,FALSE
+3,Mua 2 tặng 1 tart trứng,fixed,22000,dish,3,2026-05-06T09:00:00,2026-05-20T09:00:00,TRUE,FALSE
+4,Combo trà chiều,pct,12,category,drink,2026-05-06T09:00:00,2026-05-27T09:00:00,TRUE,FALSE
+5,Tết Trung thu -20%,pct,20,category,pastry,2026-08-04T09:00:00,2026-09-03T09:00:00,FALSE,FALSE
+6,Black Friday -25%,pct,25,all,,2026-11-22T09:00:00,2026-11-29T09:00:00,FALSE,FALSE
+7,Giáng sinh free wrap,fixed,15000,all,,2026-12-22T09:00:00,2027-01-06T09:00:00,FALSE,FALSE
+8,Cuối tuần combo cà phê,pct,10,category,drink,2026-05-06T09:00:00,2026-07-05T09:00:00,TRUE,FALSE

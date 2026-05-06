@@ -1,0 +1,61 @@
+id,telegram_msg_id,chat_id,sender_name,sender_phone,received_at,raw_text,parse_status,parsed_json,related_order_id,reviewed_by,reviewed_at
+1,10000,-1001234567890,Lan,,2026-04-21T09:00:00,"Em đặt 1 bánh kem dâu 16cm, giao thứ 7 cho 0908123456.",pending,,,,
+2,10001,-1001234567890,Hùng,,2026-04-21T07:00:00,Cho em hỏi giá bánh kem socola loại 20cm bao nhiêu vậy ạ?,pending,,,,
+3,10002,-1001234567890,Mai,,2026-04-21T05:00:00,Đặt 2 cupcake matcha + 1 tart trứng giao 6h chiều mai. SĐT 0901234567.,pending,,,,
+4,10003,-1001234567890,Bảo,,2026-04-21T03:00:00,Có bánh trung thu chưa shop?,pending,,,,
+5,10004,-1001234567890,Tuấn,,2026-04-22T01:00:00,"Em muốn 1 bánh kem sinh nhật 24cm, ghi tên 'Hoa 30 tuổi'. Giao 9/5 sáng. 0938 765 432.",pending,,,,
+6,10005,-1001234567890,Hồng,,2026-04-21T23:00:00,Cô ơi đặt cho con 1 set 6 mini cupcake socola nhé.,pending,,,,
+7,10006,-1001234567890,Khôi,,2026-04-21T21:00:00,Hỏi giá 1 hộp bánh tart hoa quả,pending,,,,
+8,10007,-1001234567890,Thanh,,2026-04-21T19:00:00,"Đặt 12 macaron pastel mix màu, giao 7/5.",pending,,,,
+9,10008,-1001234567890,Đức,,2026-04-22T17:00:00,"Cho 1 bánh kem matcha 16cm, giao trưa mai cho 0908765432.",pending,,,,
+10,10009,-1001234567890,Hà,,2026-04-22T15:00:00,Hủy đơn hôm qua giùm em.,pending,,,,
+11,10010,-1001234567890,Như,,2026-04-22T13:00:00,1 cheesecake matcha + 1 tiramisu Ý nha shop. Giao 8/5.,pending,,,,
+12,10011,-1001234567890,Cường,,2026-04-22T11:00:00,Bánh mì hoa cúc còn không?,pending,,,,
+13,10012,-1001234567890,Yến,,2026-04-24T09:00:00,Em đặt 3 croissant bơ Pháp giao trong sáng nay. 0912345678.,pending,,,,
+14,10013,-1001234567890,Tùng,,2026-04-24T07:00:00,Cho hỏi cheesecake có gluten không ạ?,pending,,,,
+15,10014,-1001234567890,Linh,,2026-04-24T05:00:00,"Đặt 1 bánh kem fondant 16cm, ghi 'Happy Birthday Bảo' — giao 10/5 chiều. 0987654321.",pending,,,,
+16,10015,-1001234567890,Tài,,2026-04-24T03:00:00,5 donut socola + 5 donut đường nha. Giao mai.,pending,,,,
+17,10016,-1001234567890,Anh,,2026-04-25T01:00:00,Tiệm có nhận đặt bánh thôi nôi không?,pending,,,,
+18,10017,-1001234567890,Trang,,2026-04-24T23:00:00,"Em đặt set 12 mini cupcake mix vị, ngày 15/5 sinh nhật bé.",pending,,,,
+19,10018,-1001234567890,Phước,,2026-04-24T21:00:00,"Bánh patê chaud còn không, em lấy 6 cái.",needs_review,,,staff,2026-04-24T22:00:00
+20,10019,-1001234567890,Ngọc,,2026-04-24T19:00:00,"1 bánh trung thu nướng + 1 bánh trung thu dẻo, giao quận 1.",needs_review,,,staff,2026-04-24T20:00:00
+21,10020,-1001234567890,Sơn,,2026-04-25T17:00:00,Đặt 2 tiramisu cốc giao chiều nay 0934567890.,needs_review,,,staff,2026-04-25T18:00:00
+22,10021,-1001234567890,Long,,2026-04-25T15:00:00,Bánh kem socola 16cm bao nhiêu shop nhỉ?,needs_review,,,staff,2026-04-25T16:00:00
+23,10022,-1001234567890,Vy,,2026-04-25T13:00:00,Em order 4 cookie chocolate chip giao trong vòng 30 phút được không?,needs_review,,,staff,2026-04-25T14:00:00
+24,10023,-1001234567890,Vinh,,2026-04-25T11:00:00,Có đặt bánh mặn không vậy?,needs_review,,,staff,2026-04-25T12:00:00
+25,10024,-1001234567890,Diễm,,2026-04-27T09:00:00,Cho em xin menu nha.,needs_review,,,staff,2026-04-27T10:00:00
+26,10025,-1001234567890,Châu,,2026-04-27T07:00:00,Em đặt 1 bánh kem rau câu giao 12/5 cho 0901112233.,needs_review,,,staff,2026-04-27T08:00:00
+27,10026,-1001234567890,Tú,,2026-04-27T05:00:00,Bánh chuối nướng 1 phần thôi nha.,parsed,,,staff,2026-04-27T06:00:00
+28,10027,-1001234567890,Thu,,2026-04-27T03:00:00,1 tart trứng + 1 bánh flan giao 5h chiều.,parsed,,,staff,2026-04-27T04:00:00
+29,10028,-1001234567890,Khánh,,2026-04-28T01:00:00,Mua 2 bánh donut socola có đc tặng 1 không shop?,parsed,,,staff,2026-04-28T02:00:00
+30,10029,-1001234567890,Hạnh,,2026-04-27T23:00:00,Đặt 1 roll cake matcha + 1 roll cake socola.,parsed,,,staff,2026-04-28T00:00:00
+31,10030,-1001234567890,Đạt,,2026-04-27T21:00:00,"Em đặt 3 cupcake matcha cho 0936543210, giao chiều mai.",parsed,,,staff,2026-04-27T22:00:00
+32,10031,-1001234567890,Vân,,2026-04-27T19:00:00,Bánh bao ngọt còn nóng không shop?,parsed,,,staff,2026-04-27T20:00:00
+33,10032,-1001234567890,Nghĩa,,2026-04-28T17:00:00,Cho em hỏi shop mở đến mấy giờ?,processed,,33,staff,2026-04-28T18:00:00
+34,10033,-1001234567890,Trân,,2026-04-28T15:00:00,"Em đặt 1 bánh kem dâu 20cm, ghi tên 'Mai 25', giao 11/5 sáng. 0908123456.",processed,,34,staff,2026-04-28T16:00:00
+35,10034,-1001234567890,Lệ,,2026-04-28T13:00:00,1 phô mai cuộn giao trong giờ trưa nay.,processed,,35,staff,2026-04-28T14:00:00
+36,10035,-1001234567890,Tài,,2026-04-28T11:00:00,"Em muốn 12 macaron mix, ngày 7/5 giao chiều.",processed,,36,staff,2026-04-28T12:00:00
+37,10036,-1001234567890,Mai,,2026-04-30T09:00:00,Đặt 1 bánh kem mousse cà phê 16cm.,processed,,37,staff,2026-04-30T10:00:00
+38,10037,-1001234567890,Huy,,2026-04-30T07:00:00,Có bán cà phê đen đá không?,processed,,38,staff,2026-04-30T08:00:00
+39,10038,-1001234567890,Tú,,2026-04-30T05:00:00,"Em mua 2 trà sữa giao Q1, sđt 0907654321.",processed,,39,staff,2026-04-30T06:00:00
+40,10039,-1001234567890,Vinh,,2026-04-30T03:00:00,Đặt 1 bánh tart phô mai size to giao thứ 7.,processed,,40,staff,2026-04-30T04:00:00
+41,10040,-1001234567890,Thắng,,2026-05-01T01:00:00,"1 tiramisu Ý + 1 cheesecake NY, sđt 0918765432, giao 8/5.",processed,,41,staff,2026-05-01T02:00:00
+42,10041,-1001234567890,Dung,,2026-04-30T23:00:00,"Em đặt set hộp 6 cupcake mix vị, sinh nhật con bé 6 tuổi nha.",processed,,42,staff,2026-05-01T00:00:00
+43,10042,-1001234567890,Hào,,2026-04-30T21:00:00,Cho hỏi bánh kem có ít ngọt không vậy?,processed,,43,staff,2026-04-30T22:00:00
+44,10043,-1001234567890,Phúc,,2026-04-30T19:00:00,"Đặt 1 bánh kem hoa kem tươi 16cm, ghi 'Mom 60', giao 13/5 chiều. 0928765432.",processed,,44,staff,2026-04-30T20:00:00
+45,10044,-1001234567890,Phương,,2026-05-01T17:00:00,Hủy 1 trong 2 bánh đặt hôm qua giùm em.,processed,,45,staff,2026-05-01T18:00:00
+46,10045,-1001234567890,Yến,,2026-05-01T15:00:00,Em đặt 4 bánh patê chaud + 2 bánh mì sandwich gà.,processed,,46,staff,2026-05-01T16:00:00
+47,10046,-1001234567890,Như,,2026-05-01T13:00:00,Bánh kem dừa giá bao nhiêu vậy ạ?,processed,,47,staff,2026-05-01T14:00:00
+48,10047,-1001234567890,Hùng,,2026-05-01T11:00:00,1 bánh xèo ngọt + 1 bánh chuối hấp.,processed,,48,staff,2026-05-01T12:00:00
+49,10048,-1001234567890,Loan,,2026-05-03T09:00:00,"Đặt 6 cookie bơ đậu phộng giao quận Bình Thạnh, 0912123123.",processed,,49,staff,2026-05-03T10:00:00
+50,10049,-1001234567890,Sơn,,2026-05-03T07:00:00,Em đặt 1 bánh kem cốm 16cm sinh nhật bà ngoại 8/5. 0905543210.,processed,,50,staff,2026-05-03T08:00:00
+51,10050,-1001234567890,Hằng,,2026-05-03T05:00:00,"1 macaron pastel set 6 + 1 cốc tiramisu, giao thứ 6 chiều.",processed,,51,staff,2026-05-03T06:00:00
+52,10051,-1001234567890,Linh,,2026-05-03T03:00:00,Cho hỏi nguyên liệu bánh có hữu cơ không shop?,processed,,52,staff,2026-05-03T04:00:00
+53,10052,-1001234567890,Quân,,2026-05-04T01:00:00,Em đặt 2 cupcake socola + 2 cupcake matcha giao ngay tại quán.,processed,,53,staff,2026-05-04T02:00:00
+54,10053,-1001234567890,Trang,,2026-05-03T23:00:00,"Đặt 1 bánh kem mousse trà xanh 16cm, ghi 'Anh yêu Em', giao 14/5 trước 6h tối. 0908321321.",processed,,54,staff,2026-05-04T00:00:00
+55,10054,-1001234567890,Đạo,,2026-05-03T21:00:00,Còn bánh trung thu không?,ignored,,,,
+56,10055,-1001234567890,Hồng,,2026-05-03T19:00:00,Em đặt 3 bánh tart chanh giao 7/5 trưa.,ignored,,,,
+57,10056,-1001234567890,Cẩm,,2026-05-04T17:00:00,Có giao Q. 7 không ạ?,ignored,,,,
+58,10057,-1001234567890,Tiến,,2026-05-04T15:00:00,1 hộp bánh bông lan trứng muối nha. Giao mai.,ignored,,,,
+59,10058,-1001234567890,Mỹ,,2026-05-04T13:00:00,"Em đặt 1 bánh kem dâu 16cm + 1 macaron set 6, giao 9/5 chiều, ghi 'Linh 18'. 0976123456.",error,,,,
+60,10059,-1001234567890,Anh,,2026-05-04T11:00:00,Em đặt 2 trà đào + 1 cà phê sữa.,error,,,,

@@ -1,0 +1,61 @@
+id,phone,name,default_address,ward,district,city,notes,consent_pdpl,consent_at,created_at,created_by
+1,+84903692581,Nguyễn Thị Lan,"1 đường Lê Lợi, Phường Bến Nghé, Quận 1",Phường Bến Nghé,Quận 1,TP. HCM,"Khách quen, thích bánh ít ngọt",FALSE,,2026-03-07T09:00:00,telegram
+2,+84370369258,Trần Văn Hùng,"12 đường Lê Lợi, Phường Bến Thành, Quận 1",Phường Bến Thành,Quận 1,TP. HCM,,TRUE,2026-03-08T09:00:00,2026-03-08T09:00:00,staff
+3,+84747036925,Lê Thị Mai,"23 đường Lê Lợi, Phường Đa Kao, Quận 1",Phường Đa Kao,Quận 1,TP. HCM,,TRUE,2026-03-09T09:00:00,2026-03-09T09:00:00,staff
+4,+84814703692,Phạm Quốc Bảo,"34 đường Lê Lợi, Phường 7, Quận 3",Phường 7,Quận 3,TP. HCM,,TRUE,2026-03-10T09:00:00,2026-03-10T09:00:00,staff
+5,+84581470369,Hoàng Anh Tuấn,"45 đường Lê Lợi, Phường 8, Quận 3",Phường 8,Quận 3,TP. HCM,,TRUE,2026-03-11T09:00:00,2026-03-11T09:00:00,staff
+6,+84958147036,Vũ Thị Hồng,"56 đường Lê Lợi, Phường 11, Quận 5",Phường 11,Quận 5,TP. HCM,,TRUE,2026-03-12T09:00:00,2026-03-12T09:00:00,telegram
+7,+84325814703,Đặng Minh Khôi,"67 đường Lê Lợi, Phường 1, Quận 6",Phường 1,Quận 6,TP. HCM,,TRUE,2026-03-13T09:00:00,2026-03-13T09:00:00,staff
+8,+84792581470,Bùi Thị Thanh,"78 đường Lê Lợi, Phường 9, Quận 10",Phường 9,Quận 10,TP. HCM,,FALSE,,2026-03-14T09:00:00,staff
+9,+84869258147,Phan Văn Đức,"89 đường Lê Lợi, Phường 14, Quận 10",Phường 14,Quận 10,TP. HCM,,TRUE,2026-03-15T09:00:00,2026-03-15T09:00:00,staff
+10,+84536925814,Trịnh Thu Hà,"100 đường Lê Lợi, Phường 12, Quận Tân Bình",Phường 12,Quận Tân Bình,TP. HCM,"Khách quen, thích bánh ít ngọt",TRUE,2026-03-16T09:00:00,2026-03-16T09:00:00,staff
+11,+84903692581,Đỗ Quỳnh Như,"111 đường Lê Lợi, Phường Tân Định, Quận 1",Phường Tân Định,Quận 1,TP. HCM,,TRUE,2026-03-17T09:00:00,2026-03-17T09:00:00,telegram
+12,+84370369258,Hồ Mạnh Cường,"122 đường Lê Lợi, Phường 25, Quận Bình Thạnh",Phường 25,Quận Bình Thạnh,TP. HCM,,TRUE,2026-03-18T09:00:00,2026-03-18T09:00:00,staff
+13,+84747036925,Ngô Thị Yến,"133 đường Lê Lợi, Phường 26, Quận Bình Thạnh",Phường 26,Quận Bình Thạnh,TP. HCM,,TRUE,2026-03-19T09:00:00,2026-03-19T09:00:00,staff
+14,+84814703692,Dương Thanh Tùng,"144 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",Phường Thảo Điền,Quận 2 (TP. Thủ Đức),TP. HCM,,TRUE,2026-03-20T09:00:00,2026-03-20T09:00:00,staff
+15,+84581470369,Lý Mỹ Linh,"155 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",Phường An Phú,Quận 2 (TP. Thủ Đức),TP. HCM,,FALSE,,2026-03-21T09:00:00,staff
+16,+84958147036,Đào Văn Tài,"166 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",Phường Hàng Bài,Quận Hoàn Kiếm,Hà Nội,,TRUE,2026-03-22T09:00:00,2026-03-22T09:00:00,telegram
+17,+84325814703,Tạ Phương Anh,"177 đường Lê Lợi, Phường Phan Chu Trinh, Quận Hoàn Kiếm",Phường Phan Chu Trinh,Quận Hoàn Kiếm,Hà Nội,,TRUE,2026-03-23T09:00:00,2026-03-23T09:00:00,staff
+18,+84792581470,Mai Thị Trang,"188 đường Lê Lợi, Phường Trúc Bạch, Quận Ba Đình",Phường Trúc Bạch,Quận Ba Đình,Hà Nội,,TRUE,2026-03-24T09:00:00,2026-03-24T09:00:00,staff
+19,+84869258147,Lương Hữu Phước,"199 đường Lê Lợi, Phường Quan Hoa, Quận Cầu Giấy",Phường Quan Hoa,Quận Cầu Giấy,Hà Nội,"Khách quen, thích bánh ít ngọt",TRUE,2026-03-25T09:00:00,2026-03-25T09:00:00,staff
+20,+84536925814,Cao Bích Ngọc,"10 đường Lê Lợi, Phường Yên Hoà, Quận Cầu Giấy",Phường Yên Hoà,Quận Cầu Giấy,Hà Nội,,TRUE,2026-03-26T09:00:00,2026-03-26T09:00:00,staff
+21,+84903692581,Trương Thanh Sơn,"21 đường Lê Lợi, Phường Mỹ Đình 1, Quận Nam Từ Liêm",Phường Mỹ Đình 1,Quận Nam Từ Liêm,Hà Nội,,TRUE,2026-03-27T09:00:00,2026-03-27T09:00:00,telegram
+22,+84370369258,Nguyễn Hoàng Long,"32 đường Lê Lợi, Phường Trung Hoà, Quận Cầu Giấy",Phường Trung Hoà,Quận Cầu Giấy,Hà Nội,,FALSE,,2026-03-28T09:00:00,staff
+23,+84747036925,Trần Thuý Vy,"43 đường Lê Lợi, Phường Bến Nghé, Quận 1",Phường Bến Nghé,Quận 1,TP. HCM,,TRUE,2026-03-29T09:00:00,2026-03-29T09:00:00,staff
+24,+84814703692,Lê Quang Vinh,"54 đường Lê Lợi, Phường Bến Thành, Quận 1",Phường Bến Thành,Quận 1,TP. HCM,,TRUE,2026-03-30T09:00:00,2026-03-30T09:00:00,staff
+25,+84581470369,Phạm Thị Diễm,"65 đường Lê Lợi, Phường Đa Kao, Quận 1",Phường Đa Kao,Quận 1,TP. HCM,,TRUE,2026-03-31T09:00:00,2026-03-31T09:00:00,staff
+26,+84958147036,Hoàng Bảo Châu,"76 đường Lê Lợi, Phường 7, Quận 3",Phường 7,Quận 3,TP. HCM,,TRUE,2026-04-01T09:00:00,2026-04-01T09:00:00,telegram
+27,+84325814703,Vũ Anh Tú,"87 đường Lê Lợi, Phường 8, Quận 3",Phường 8,Quận 3,TP. HCM,,TRUE,2026-04-02T09:00:00,2026-04-02T09:00:00,staff
+28,+84792581470,Đặng Hoài Thu,"98 đường Lê Lợi, Phường 11, Quận 5",Phường 11,Quận 5,TP. HCM,"Khách quen, thích bánh ít ngọt",TRUE,2026-04-03T09:00:00,2026-04-03T09:00:00,staff
+29,+84869258147,Bùi Quốc Khánh,"109 đường Lê Lợi, Phường 1, Quận 6",Phường 1,Quận 6,TP. HCM,,FALSE,,2026-04-04T09:00:00,staff
+30,+84536925814,Phan Mỹ Hạnh,"120 đường Lê Lợi, Phường 9, Quận 10",Phường 9,Quận 10,TP. HCM,,TRUE,2026-04-05T09:00:00,2026-04-05T09:00:00,staff
+31,+84903692581,Trịnh Văn Đạt,"131 đường Lê Lợi, Phường 14, Quận 10",Phường 14,Quận 10,TP. HCM,,TRUE,2026-04-06T09:00:00,2026-04-06T09:00:00,telegram
+32,+84370369258,Đỗ Hồng Vân,"142 đường Lê Lợi, Phường 12, Quận Tân Bình",Phường 12,Quận Tân Bình,TP. HCM,,TRUE,2026-04-07T09:00:00,2026-04-07T09:00:00,staff
+33,+84747036925,Hồ Trọng Nghĩa,"153 đường Lê Lợi, Phường Tân Định, Quận 1",Phường Tân Định,Quận 1,TP. HCM,,TRUE,2026-04-08T09:00:00,2026-04-08T09:00:00,staff
+34,+84814703692,Ngô Bảo Trân,"164 đường Lê Lợi, Phường 25, Quận Bình Thạnh",Phường 25,Quận Bình Thạnh,TP. HCM,,TRUE,2026-04-09T09:00:00,2026-04-09T09:00:00,staff
+35,+84581470369,Dương Mỹ Lệ,"175 đường Lê Lợi, Phường 26, Quận Bình Thạnh",Phường 26,Quận Bình Thạnh,TP. HCM,,TRUE,2026-04-10T09:00:00,2026-04-10T09:00:00,staff
+36,+84958147036,Lý Hữu Tài,"186 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",Phường Thảo Điền,Quận 2 (TP. Thủ Đức),TP. HCM,,FALSE,,2026-04-11T09:00:00,telegram
+37,+84325814703,Đào Phương Mai,"197 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",Phường An Phú,Quận 2 (TP. Thủ Đức),TP. HCM,"Khách quen, thích bánh ít ngọt",TRUE,2026-04-12T09:00:00,2026-04-12T09:00:00,staff
+38,+84792581470,Tạ Quang Huy,"8 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",Phường Hàng Bài,Quận Hoàn Kiếm,Hà Nội,,TRUE,2026-04-13T09:00:00,2026-04-13T09:00:00,staff
+39,+84869258147,Mai Thanh Tú,"19 đường Lê Lợi, Phường Phan Chu Trinh, Quận Hoàn Kiếm",Phường Phan Chu Trinh,Quận Hoàn Kiếm,Hà Nội,,TRUE,2026-04-14T09:00:00,2026-04-14T09:00:00,staff
+40,+84536925814,Lương Thị Vinh,"30 đường Lê Lợi, Phường Trúc Bạch, Quận Ba Đình",Phường Trúc Bạch,Quận Ba Đình,Hà Nội,,TRUE,2026-04-15T09:00:00,2026-04-15T09:00:00,staff
+41,+84903692581,Cao Hữu Thắng,"41 đường Lê Lợi, Phường Quan Hoa, Quận Cầu Giấy",Phường Quan Hoa,Quận Cầu Giấy,Hà Nội,,TRUE,2026-04-16T09:00:00,2026-04-16T09:00:00,telegram
+42,+84370369258,Trương Mỹ Dung,"52 đường Lê Lợi, Phường Yên Hoà, Quận Cầu Giấy",Phường Yên Hoà,Quận Cầu Giấy,Hà Nội,,TRUE,2026-04-17T09:00:00,2026-04-17T09:00:00,staff
+43,+84747036925,Nguyễn Phú Hào,"63 đường Lê Lợi, Phường Mỹ Đình 1, Quận Nam Từ Liêm",Phường Mỹ Đình 1,Quận Nam Từ Liêm,Hà Nội,,FALSE,,2026-04-18T09:00:00,staff
+44,+84814703692,Trần Hồng Phúc,"74 đường Lê Lợi, Phường Trung Hoà, Quận Cầu Giấy",Phường Trung Hoà,Quận Cầu Giấy,Hà Nội,,TRUE,2026-04-19T09:00:00,2026-04-19T09:00:00,staff
+45,+84581470369,Lê Bích Phương,"85 đường Lê Lợi, Phường Bến Nghé, Quận 1",Phường Bến Nghé,Quận 1,TP. HCM,,TRUE,2026-04-20T09:00:00,2026-04-20T09:00:00,staff
+46,+84958147036,Phạm Hoàng Yến,"96 đường Lê Lợi, Phường Bến Thành, Quận 1",Phường Bến Thành,Quận 1,TP. HCM,"Khách quen, thích bánh ít ngọt",TRUE,2026-04-21T09:00:00,2026-04-21T09:00:00,telegram
+47,+84325814703,Hoàng Thị Như,"107 đường Lê Lợi, Phường Đa Kao, Quận 1",Phường Đa Kao,Quận 1,TP. HCM,,TRUE,2026-04-22T09:00:00,2026-04-22T09:00:00,staff
+48,+84792581470,Vũ Mạnh Hùng,"118 đường Lê Lợi, Phường 7, Quận 3",Phường 7,Quận 3,TP. HCM,,TRUE,2026-04-23T09:00:00,2026-04-23T09:00:00,staff
+49,+84869258147,Đặng Thị Loan,"129 đường Lê Lợi, Phường 8, Quận 3",Phường 8,Quận 3,TP. HCM,,TRUE,2026-04-24T09:00:00,2026-04-24T09:00:00,staff
+50,+84536925814,Bùi Văn Sơn,"140 đường Lê Lợi, Phường 11, Quận 5",Phường 11,Quận 5,TP. HCM,,FALSE,,2026-04-25T09:00:00,staff
+51,+84903692581,Phan Thanh Hằng,"151 đường Lê Lợi, Phường 1, Quận 6",Phường 1,Quận 6,TP. HCM,,TRUE,2026-04-26T09:00:00,2026-04-26T09:00:00,telegram
+52,+84370369258,Trịnh Khánh Linh,"162 đường Lê Lợi, Phường 9, Quận 10",Phường 9,Quận 10,TP. HCM,,TRUE,2026-04-27T09:00:00,2026-04-27T09:00:00,staff
+53,+84747036925,Đỗ Mạnh Quân,"173 đường Lê Lợi, Phường 14, Quận 10",Phường 14,Quận 10,TP. HCM,,TRUE,2026-04-28T09:00:00,2026-04-28T09:00:00,staff
+54,+84814703692,Hồ Thị Trang,"184 đường Lê Lợi, Phường 12, Quận Tân Bình",Phường 12,Quận Tân Bình,TP. HCM,,TRUE,2026-04-29T09:00:00,2026-04-29T09:00:00,staff
+55,+84581470369,Ngô Quang Đạo,"195 đường Lê Lợi, Phường Tân Định, Quận 1",Phường Tân Định,Quận 1,TP. HCM,"Khách quen, thích bánh ít ngọt",TRUE,2026-04-30T09:00:00,2026-04-30T09:00:00,staff
+56,+84958147036,Dương Thuý Hồng,"6 đường Lê Lợi, Phường 25, Quận Bình Thạnh",Phường 25,Quận Bình Thạnh,TP. HCM,,TRUE,2026-05-01T09:00:00,2026-05-01T09:00:00,telegram
+57,+84325814703,Lý Thị Cẩm,"17 đường Lê Lợi, Phường 26, Quận Bình Thạnh",Phường 26,Quận Bình Thạnh,TP. HCM,,FALSE,,2026-05-02T09:00:00,staff
+58,+84792581470,Đào Văn Tiến,"28 đường Lê Lợi, Phường Thảo Điền, Quận 2 (TP. Thủ Đức)",Phường Thảo Điền,Quận 2 (TP. Thủ Đức),TP. HCM,,TRUE,2026-05-03T09:00:00,2026-05-03T09:00:00,staff
+59,+84869258147,Tạ Thị Mỹ,"39 đường Lê Lợi, Phường An Phú, Quận 2 (TP. Thủ Đức)",Phường An Phú,Quận 2 (TP. Thủ Đức),TP. HCM,,TRUE,2026-05-04T09:00:00,2026-05-04T09:00:00,staff
+60,+84536925814,Nguyễn Đức Anh,"50 đường Lê Lợi, Phường Hàng Bài, Quận Hoàn Kiếm",Phường Hàng Bài,Quận Hoàn Kiếm,Hà Nội,,TRUE,2026-05-05T09:00:00,2026-05-05T09:00:00,staff

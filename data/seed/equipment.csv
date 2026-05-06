@@ -1,0 +1,9 @@
+id,name_vi,purchased_at,purchase_price_vnd,useful_life_months,salvage_value_vnd,monthly_depreciation_vnd,is_active,notes
+1,Lò nướng Unox 4 khay,2025-11-07T09:00:00,28000000,60,2000000,433333,TRUE,
+2,Máy đánh trứng KitchenAid Pro,2025-10-08T09:00:00,12000000,60,800000,186667,TRUE,
+3,Tủ trưng bày kính 2 tầng,2025-09-08T09:00:00,18000000,84,1500000,196429,TRUE,
+4,Lò vi sóng Sharp 25L,2025-08-09T09:00:00,3500000,60,200000,55000,TRUE,
+5,Máy xay sinh tố Philips HR2096,2025-07-10T09:00:00,2200000,36,100000,58333,TRUE,
+6,Bàn nhồi bột inox 2m,2025-06-10T09:00:00,6500000,120,500000,50000,TRUE,
+7,Khuôn bánh các loại (set),2025-05-11T09:00:00,4500000,60,0,75000,TRUE,
+8,Cân điện tử 5kg + 30kg,2025-04-11T09:00:00,1800000,60,0,30000,TRUE,
