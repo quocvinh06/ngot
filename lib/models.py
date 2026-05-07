@@ -472,3 +472,58 @@ class ParsedOrder(BaseModel):
     delivery_address: str = Field(default="")
     notes: str = Field(default="")
     confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+# ── Telegram intent dispatch (NEW v0.7.4 — autopilot loop) ────────
+
+class ParsedIntent(BaseModel):
+    """Top-level intent classifier output. Gemini emits one of these per message."""
+
+    kind: str = Field(
+        default="UNKNOWN",
+        description=(
+            "ORDER | MENU_ADD | INGREDIENT_PURCHASE | QUERY | "
+            "GREETING | HELP | UNKNOWN"
+        ),
+    )
+    summary_vi: str = Field(default="", description="One-sentence Vietnamese summary of what the user is asking")
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+class ParsedMenuItem(BaseModel):
+    """Structured output for parse_menu skill — admin adds a new dish via Telegram."""
+
+    name_vi: str = Field(default="")
+    category: str = Field(default="other", description="cake|pastry|bread|tart|cupcake|cookie|drink|other")
+    price_vnd: int = Field(default=0, description="Retail price in VND; 0 if not given")
+    size: str = Field(default="", description="e.g. 16cm, 1 cái, set 4 vị")
+    description_vi: str = Field(default="")
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+class ParsedIngredientPurchase(BaseModel):
+    """Structured output for parse_ingredient_purchase skill."""
+
+    ingredient_name_vi: str = Field(default="")
+    unit: str = Field(default="g", description="g|kg|ml|lít|cái")
+    quantity: float = Field(default=0.0)
+    unit_price_vnd: int = Field(default=0, description="Per-unit price; 0 if only total given")
+    total_vnd: int = Field(default=0, description="Total cost; 0 if only unit price given")
+    supplier_name: str = Field(default="")
+    notes: str = Field(default="")
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+
+
+class ParsedQuery(BaseModel):
+    """Structured output for parse_query skill — read-only data lookup."""
+
+    query_kind: str = Field(
+        default="UNKNOWN",
+        description=(
+            "REVENUE_TODAY | REVENUE_MONTH | LOW_STOCK | RECENT_ORDERS | "
+            "ORDER_STATUS | TOP_DISHES | CUSTOMER_LOOKUP | UNKNOWN"
+        ),
+    )
+    period_label: str = Field(default="", description="e.g. '2026-05', 'today', 'this week'; for time-bound queries")
+    extra: str = Field(default="", description="phone/order_id/dish_name as a free-form hint")
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)

@@ -11,3 +11,4 @@ data/seed/_local/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+data/seed/_legacy/
