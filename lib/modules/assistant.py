@@ -960,6 +960,8 @@ def _q_order_status(extra: str) -> str:
         return "🤔 Em chưa thấy số đơn — anh/chị nhắn dạng '#123' giúp em."
     order_id = int(digits)
     orders = sheets_client.read_tab("Orders")
+    if orders.empty or "id" not in orders.columns:
+        return "⚠ Không đọc được dữ liệu đơn (có thể Sheets đang giới hạn tốc độ — thử lại sau 1 phút)."
     matches = orders[pd.to_numeric(orders["id"], errors="coerce") == order_id]
     if matches.empty:
         return f"❌ Em không tìm thấy đơn #{order_id}."
