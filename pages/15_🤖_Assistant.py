@@ -58,7 +58,10 @@ t_pending, t_review, t_done, t_all = st.tabs(
 )
 
 
-def _msg_card(row):
+def _msg_card(row, key_prefix: str):
+    """Render a Telegram message card. `key_prefix` namespaces the buttons so
+    the same row can appear in multiple tabs without st.button key collisions.
+    """
     msg_id = int(row["id"])
     with st.container(border=True):
         h1, h2 = st.columns([3, 1])
@@ -79,9 +82,31 @@ def _msg_card(row):
                 except Exception:
                     st.code(parsed_json)
 
-        bcol1, bcol2, bcol3 = st.columns(3)
+        bcol1, bcol2, bcol3, bcol4 = st.columns(4)
         with bcol1:
-            if st.button("🤖 " + t("cta.parse_message"), key=f"parse_{msg_id}"):
+            if st.button(
+                "🤖 Trợ lý xử lý",
+                key=f"{key_prefix}_autopilot_{msg_id}",
+                help="Chạy lại trợ lý AI: phân loại + tạo đơn / nhập kho / trả lời + nhắn lại Telegram.",
+            ):
+                with st.spinner("Trợ lý đang xử lý..."):
+                    try:
+                        result = assistant_mod.process_inbound_message(
+                            telegram_msg_id=int(row.get("telegram_msg_id") or 0),
+                            chat_id=int(row.get("chat_id") or 0),
+                            sender_name=str(row.get("sender_name") or ""),
+                            raw_text=str(row.get("raw_text") or ""),
+                            actor=current_role() or "staff",
+                        )
+                        st.success(
+                            f"Intent: {result['intent']} → {result['status']}"
+                            + (f" (đơn #{result['related_order_id']})" if result.get("related_order_id") else "")
+                        )
+                        st.rerun()
+                    except Exception as e:  # noqa: BLE001
+                        st.error(f"Lỗi: {e}")
+        with bcol2:
+            if st.button("🔍 " + t("cta.parse_message"), key=f"{key_prefix}_parse_{msg_id}"):
                 with st.spinner("Đang phân tích..."):
                     parsed = assistant_mod.parse_order_message(
                         row.get("raw_text", ""), actor=current_role() or "staff"
@@ -98,8 +123,8 @@ def _msg_card(row):
                     )
                     st.success(f"Đã phân tích — confidence {parsed.confidence:.2f}")
                     st.rerun()
-        with bcol2:
-            if st.button("➕ " + t("cta.process_as_order"), key=f"order_{msg_id}", disabled=not parsed_json):
+        with bcol3:
+            if st.button("➕ " + t("cta.process_as_order"), key=f"{key_prefix}_order_{msg_id}", disabled=not parsed_json):
                 if parsed_json:
                     parsed = json.loads(parsed_json)
                     st.session_state.prefill_order = {
@@ -113,8 +138,8 @@ def _msg_card(row):
                         "TelegramMessages", msg_id, {"parse_status": "processed"}
                     )
                     st.switch_page("pages/02_➕_New_Order.py")
-        with bcol3:
-            if st.button("🚫 Bỏ qua", key=f"ignore_{msg_id}"):
+        with bcol4:
+            if st.button("🚫 Bỏ qua", key=f"{key_prefix}_ignore_{msg_id}"):
                 sheets_client.update_row(
                     "TelegramMessages", msg_id, {"parse_status": "ignored"}
                 )
@@ -126,22 +151,22 @@ with t_pending:
     if sub.empty:
         st.info("Không có tin nhắn chờ phân tích.")
     for _, row in sub.head(20).iterrows():
-        _msg_card(row)
+        _msg_card(row, key_prefix="p")
 
 with t_review:
     sub = df[df["parse_status"].isin(["needs_review", "parsed"])]
     if sub.empty:
         st.info("Không có tin nhắn cần xem lại.")
     for _, row in sub.head(20).iterrows():
-        _msg_card(row)
+        _msg_card(row, key_prefix="r")
 
 with t_done:
     sub = df[df["parse_status"].isin(["processed", "ignored"])]
     if sub.empty:
         st.info("Chưa có tin nhắn nào được xử lý.")
     for _, row in sub.head(20).iterrows():
-        _msg_card(row)
+        _msg_card(row, key_prefix="d")
 
 with t_all:
     for _, row in df.head(40).iterrows():
-        _msg_card(row)
+        _msg_card(row, key_prefix="a")
