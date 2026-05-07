@@ -1,0 +1,10 @@
+name = "ngot-telegram-webhook"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+
+# Free plan — no usage limits config needed.
+# Secrets set via: wrangler secret put GH_PAT / WEBHOOK_SECRET / GH_REPO
+
+[observability]
+enabled = true
+head_sampling_rate = 1

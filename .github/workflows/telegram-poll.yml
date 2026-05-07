@@ -1,12 +1,23 @@
 name: Telegram Poll
 
 on:
+  # Cloudflare Worker fires this when a Telegram webhook arrives — near-real-time.
+  # Disabled if you stick with cron polling (no harm in keeping it enabled either way).
+  repository_dispatch:
+    types: [telegram_message]
+
+  # Cron backup — only useful if webhook is NOT set (Telegram only allows ONE delivery
+  # method at a time). With webhook set, getUpdates returns 409 and the cron will skip.
   schedule:
-    # Every 5 min — GitHub Actions minimum interval. Note: schedules are
-    # "best effort" and may be delayed during peak load (sometimes 10-30 min).
-    # For true real-time, point Telegram webhook at a Cloudflare Worker.
     - cron: '*/5 * * * *'
+
   workflow_dispatch: {}
+
+concurrency:
+  # Allow webhook dispatches to run in parallel (one per message), but coalesce
+  # cron runs so we don't pile up.
+  group: telegram-poll-${{ github.event.action || github.event_name }}-${{ github.event.client_payload.telegram_msg_id || 'cron' }}
+  cancel-in-progress: false
 
 jobs:
   poll:
@@ -25,7 +36,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run telegram_poll.py
+      - name: Process single webhook message
+        if: github.event_name == 'repository_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SHEETS_URL: ${{ secrets.SHEETS_URL }}
+          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MSG_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: python scripts/process_telegram_payload.py
+
+      - name: Backup poll (cron / manual dispatch)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
