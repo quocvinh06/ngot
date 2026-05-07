@@ -23,6 +23,10 @@ jobs:
   poll:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    # Secrets live under the "Production" environment in this repo's settings.
+    # Without this declaration, ${{ secrets.* }} resolves to (empty) repo-level
+    # secrets and the Python script bails on missing env vars.
+    environment: Production
     steps:
       - uses: actions/checkout@v4
 
