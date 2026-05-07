@@ -2,7 +2,10 @@ name: Telegram Poll
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    # Every 5 min — GitHub Actions minimum interval. Note: schedules are
+    # "best effort" and may be delayed during peak load (sometimes 10-30 min).
+    # For true real-time, point Telegram webhook at a Cloudflare Worker.
+    - cron: '*/5 * * * *'
   workflow_dispatch: {}
 
 jobs:

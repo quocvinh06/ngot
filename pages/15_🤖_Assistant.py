@@ -1,4 +1,8 @@
-"""Assistant — Telegram inbox + parse → review → confirm flow."""
+"""Assistant — Telegram inbox + parse → review → confirm flow.
+
+Now supports auto-refresh: while the page is open, polls Telegram every 30s
+so replies feel near-real-time. Toggle off to save Gemini quota.
+"""
 from __future__ import annotations
 
 import json
@@ -21,13 +25,15 @@ require_auth()
 st.title(t("assistant.title"))
 st.caption(t("assistant.subtitle"))
 
-# Sync now button
+# ── Auto-refresh toggle (near-real-time when page is open) ──
 sccol1, sccol2, sccol3 = st.columns([2, 1, 1])
 with sccol1:
     last_msg = sheets_client.read_tab("TelegramMessages")
     if not last_msg.empty:
         last_dt = last_msg["received_at"].astype(str).max()
         st.caption(t("misc.last_sync", ts=format_datetime_vi(last_dt)))
+with sccol2:
+    auto = st.toggle("⏱ Tự động sync", value=True, help="Mỗi 30 giây tự gọi Telegram")
 with sccol3:
     if st.button("🔄 " + t("cta.sync_telegram"), type="primary", use_container_width=True):
         with st.spinner(t("info.sync_started")):
@@ -37,6 +43,23 @@ with sccol3:
                 st.rerun()
             except Exception as e:  # noqa: BLE001
                 st.error(f"Telegram error: {e}")
+
+# When auto-sync toggle is on, also do a poll on every page render + schedule a
+# 30s rerun via st_autorefresh. This makes the inbox feel near-real-time
+# whenever an admin has the page open.
+if auto:
+    try:
+        count = assistant_mod.poll_telegram(actor=current_role() or "staff")
+        if count:
+            st.toast(f"📩 {count} tin nhắn mới")
+    except Exception as e:  # noqa: BLE001
+        # Quiet failure — surface in caption so it's not spammy
+        st.caption(f"⚠ poll error: {str(e)[:80]}")
+    try:
+        from streamlit_autorefresh import st_autorefresh
+        st_autorefresh(interval=30_000, key="assistant_autorefresh")
+    except ImportError:
+        st.caption("(Để bật auto-refresh, cài `streamlit-autorefresh` rồi rerun.)")
 
 # Tabs by parse_status
 df = sheets_client.read_tab("TelegramMessages")
