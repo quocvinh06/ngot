@@ -246,8 +246,135 @@ def generate_vietqr(order_id: int, settings: dict) -> bytes:
 # ---------- Bill PDF ----------
 
 
+def generate_bill_text(order_id: int, settings: dict, customer_row: Optional[dict] = None) -> str:
+    """Render a plain-text bill (UTF-8) — works on any platform, no font issues.
+
+    Returned string is suitable for `st.download_button` (.txt) or `st.code()`
+    rendering on the Order Detail page.
+    """
+    o = get(order_id)
+    if o is None:
+        raise ValueError(f"Order {order_id} not found")
+    items = list_items(order_id)
+
+    shop_name = settings.get("shop_name") or "Ngọt"
+    shop_address = settings.get("shop_address", "")
+    shop_phone = settings.get("shop_phone", "")
+    cert = settings.get("shop_food_safety_cert", "")
+    bank_name = settings.get("bank_name", "")
+    bank_acct = settings.get("bank_account_number", "")
+    bank_holder = settings.get("bank_account_holder", "")
+
+    W = 56  # printable width (chars), suits an A6 thermal-receipt feel
+    sep = "═" * W
+    thin = "─" * W
+
+    lines: list[str] = []
+    lines.append(sep)
+    lines.append(shop_name.upper().center(W))
+    if shop_address:
+        lines.append(shop_address.center(W))
+    if shop_phone:
+        lines.append(f"ĐT: {shop_phone}".center(W))
+    if cert:
+        lines.append(f"GCN ATTP: {cert}".center(W))
+    lines.append(sep)
+    lines.append("")
+
+    lines.append(f"HOÁ ĐƠN #{order_id}".center(W))
+    lines.append(thin)
+    lines.append(f"Ngày đặt:  {format_date_vi(o.order_date)}")
+    lines.append(f"Ngày giao: {format_date_vi(o.delivery_date)}")
+    lines.append("")
+
+    if customer_row:
+        cname = (customer_row.get("name") or "").strip()
+        cphone = (customer_row.get("phone") or "").strip()
+        if cname:
+            lines.append(f"Khách hàng:    {cname}")
+        if cphone:
+            lines.append(f"Số điện thoại: {cphone}")
+    if o.delivery_address:
+        lines.append(f"Địa chỉ giao:  {o.delivery_address}")
+    if o.notes:
+        lines.append(f"Ghi chú:       {o.notes}")
+    lines.append("")
+
+    lines.append(thin)
+    lines.append("CHI TIẾT ĐƠN")
+    lines.append(thin)
+    # Header row
+    name_w = 26
+    qty_w = 4
+    price_w = 11
+    total_w = 11
+    lines.append(
+        f"{'Món':<{name_w}}{'SL':>{qty_w}}{'Đơn giá':>{price_w}}{'Tổng':>{total_w}}"
+    )
+    lines.append("-" * (name_w + qty_w + price_w + total_w))
+    for it in items:
+        name = (it.dish_name_snapshot or "")[:name_w]
+        qty = str(int(it.quantity or 0))
+        unit = format_vnd(it.unit_price_vnd, with_symbol=False)
+        sub = format_vnd(it.subtotal_vnd, with_symbol=False)
+        if len(name) > name_w:
+            # wrap long names — first slice on header row, rest indented
+            lines.append(
+                f"{name[:name_w]:<{name_w}}{qty:>{qty_w}}{unit:>{price_w}}{sub:>{total_w}}"
+            )
+        else:
+            lines.append(
+                f"{name:<{name_w}}{qty:>{qty_w}}{unit:>{price_w}}{sub:>{total_w}}"
+            )
+    lines.append(thin)
+
+    # Totals
+    sub_str = format_vnd(o.subtotal_vnd, with_symbol=False)
+    lines.append(f"{'Tạm tính:':>{name_w + qty_w + price_w}} {sub_str:>{total_w - 1}}")
+    if o.discount_value:
+        if o.discount_kind == "pct":
+            label = f"Giảm {o.discount_value}%:"
+        else:
+            label = f"Giảm {format_vnd(o.discount_value, with_symbol=False)}:"
+        diff = int(o.subtotal_vnd or 0) - int(o.total_vnd or 0)
+        lines.append(
+            f"{label:>{name_w + qty_w + price_w}} {('-' + format_vnd(diff, with_symbol=False)):>{total_w - 1}}"
+        )
+    total_str = format_vnd(o.total_vnd, with_symbol=False)
+    lines.append(f"{'TỔNG CỘNG:':>{name_w + qty_w + price_w}} {(total_str + ' đ'):>{total_w - 1}}")
+    lines.append("")
+
+    # Payment block
+    lines.append(thin)
+    lines.append("THANH TOÁN")
+    lines.append(thin)
+    lines.append(f"Ngân hàng:     {bank_name or '(chưa thiết lập)'}")
+    lines.append(f"Số tài khoản:  {bank_acct or '(chưa thiết lập)'}")
+    lines.append(f"Chủ tài khoản: {bank_holder or '(chưa thiết lập)'}")
+    lines.append(f"Nội dung CK:   Thanh toan don NGOT-{order_id}")
+    if o.paid_at:
+        lines.append(f"Đã thanh toán: {o.paid_at}")
+    if o.payment_method:
+        lines.append(f"Phương thức:   {o.payment_method}")
+    lines.append("")
+
+    lines.append(sep)
+    lines.append("Cảm ơn quý khách!".center(W))
+    lines.append("Hẹn gặp lại tại Ngọt 🍰".center(W))
+    lines.append(sep)
+
+    return "\n".join(lines)
+
+
 def generate_bill_pdf(order_id: int, settings: dict, customer_row: Optional[dict] = None) -> bytes:
-    """Render a simple bill PDF via fpdf2 with embedded VietQR PNG.
+    """DEPRECATED — use generate_bill_text. Kept for backward compat; falls
+    through to text-as-bytes so existing callers don't crash. PDF generation
+    via fpdf2 broke on Vietnamese diacritics outside Helvetica's range."""
+    return generate_bill_text(order_id, settings, customer_row).encode("utf-8")
+
+
+def _generate_bill_pdf_legacy(order_id: int, settings: dict, customer_row: Optional[dict] = None) -> bytes:
+    """Original fpdf2 implementation — kept for reference, not invoked.
 
     Uses DejaVu Sans (bundled with fpdf2) for Vietnamese diacritics.
     """

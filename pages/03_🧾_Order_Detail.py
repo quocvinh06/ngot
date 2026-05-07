@@ -134,16 +134,18 @@ with bcol1:
     )
     try:
         cust_dict = customer.model_dump() if customer else None
-        pdf_bytes = ord_mod.generate_bill_pdf(order.id, settings, cust_dict)
+        bill_text = ord_mod.generate_bill_text(order.id, settings, cust_dict)
+        with st.expander("🧾 Xem hoá đơn dạng văn bản", expanded=False):
+            st.code(bill_text, language=None)
         st.download_button(
-            t("cta.download_bill"),
-            data=pdf_bytes,
-            file_name=f"hoa-don-NGOT-{order.id}.pdf",
-            mime="application/pdf",
+            "📥 Tải hoá đơn (.txt)",
+            data=bill_text.encode("utf-8"),
+            file_name=f"hoa-don-NGOT-{order.id}.txt",
+            mime="text/plain",
             use_container_width=True,
         )
     except Exception as e:  # noqa: BLE001
-        st.warning(f"Chưa thể tạo PDF: {e}")
+        st.warning(f"Chưa tạo được hoá đơn: {e}")
 
 with bcol2:
     st.caption(t("bill.vietqr_label"))
